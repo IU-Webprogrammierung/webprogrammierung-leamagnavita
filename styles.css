@@ -1,19 +1,24 @@
 nav ul {
     list-style-type: none;
     padding: 0px;
-    width:;
-    background-color: #FFFF;
-    border-radius: 50px;
     margin: 0 auto;
+    top: 0px;
+    z-index: 100;
     display: flex;
     justify-content: center;
-    position: fixed;
+}
+nav{
+    background-color: #FFFF;
+    width: fit-content;
+    border-radius: 50px;
+    margin:0 auto;
+    position: sticky;
 }
 nav li a {
     display: block;
     color: #500711;
-    padding: 14px 16px;
-    text-decoration:none;
+    padding: 12px 16px;
+    text-decoration: none;
     border-radius: 50px;
 }
 nav li a.active {
@@ -21,4 +26,9 @@ nav li a.active {
 }
 body{
     background-color: #FB96BD;
+}
+h1 { 
+  font-family: "Playfair Display", serif;
+  font-size: 140px;
+  color: #500711;
 }

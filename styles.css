@@ -11,7 +11,7 @@ nav{
     background-color: #FFFF;
     width: fit-content;
     border-radius: 50px;
-    margin:0 auto;
+    margin: 0 auto;
     position: sticky;
 }
 nav li a {
@@ -24,11 +24,44 @@ nav li a {
 nav li a.active {
     background-color: #ffc95f;
 }
-body{
-    background-color: #FB96BD;
-}
 h1 { 
   font-family: "Playfair Display", serif;
-  font-size: 140px;
+  font-size: 120px;
   color: #500711;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.0;
+}
+.header {   
+    background-color: #FB96BD;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #500711;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #500711;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color:#500711
+}
+.beschreibung {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #AE9598;
+}
+body {
+    margin: 0;
+    padding: 0;
 }

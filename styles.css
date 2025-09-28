@@ -86,4 +86,45 @@ body {
     display: flex;
     padding: 50px 50px;
 }
-
+.lebenslauf {
+    margin-right: 150px; 
+}
+.studium2 {
+    margin-top: 35px;
+}
+.studium2 h3, .studium2 p {
+    margin: 0 auto;
+    margin-bottom: 3px;
+}
+.studium1 h3, .studium1 p {
+    margin: 0 auto;
+    margin-bottom: 3px;  
+}
+.studium1, .studium2, .fachabitur, .amazon, .hundekindergarten, .mömax {
+    margin-bottom: 35px;
+}
+.fachabitur h3, .fachabitur p {
+    margin: 0 auto;
+    margin-bottom: 3px;  
+}
+.amazon {
+    margin-top: 35px;
+}
+.amazon h3, .amazon p {
+    margin: 0 auto;
+    margin-bottom: 3px;  
+}
+.hundekindergarten h3, .hundekindergarten p {
+    margin: 0 auto;
+    margin-bottom: 3px;  
+}
+.mömax h3, .mömax p {
+    margin: 0 auto;
+    margin-bottom: 3px;  
+}
+.softwareskills, .grundkenntnisse, .meinefähigkeiten, .kontakt {
+    margin-bottom: 55px;
+}
+.grundkenntnisse, .kontakt {
+    padding-left: 70px;
+}

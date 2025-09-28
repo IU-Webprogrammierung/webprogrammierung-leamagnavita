@@ -7,7 +7,7 @@ nav, ul {
     display: flex;
     justify-content: center;
 }
-nav{
+nav {
     background-color: #F8F5EB;
     width: fit-content;
     border-radius: 50px;
@@ -127,4 +127,32 @@ body {
 }
 .grundkenntnisse, .kontakt {
     padding-left: 70px;
+}
+.skillsliste1, .skillsliste2 {
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.gesamteliste {
+    display: inline-block;
+}
+.kreativ {
+    background-color: #ED9BBD;
+    border-radius: 50px;
+    padding: 7px; 
+    width: 60px;
+    text-align: center;
+}
+.empathisch, .selbstständig {
+    background-color: #ED9BBD;
+    border-radius: 50px;
+    padding: 7px; 
+    width: 95px;
+    text-align: center;
+}
+.teamfähig, .lernbereit {
+    border: 2px solid #FFC95F;
+    border-radius: 50px;
+    width: 95px;
+    text-align: center;
+    padding-top: 5px;
 }

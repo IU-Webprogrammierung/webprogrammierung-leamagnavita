@@ -87,7 +87,7 @@ body {
     padding: 50px 50px;
 }
 .lebenslauf {
-    margin-right: 150px; 
+    margin-right: 200px; 
 }
 .studium2 {
     margin-top: 35px;
@@ -126,7 +126,7 @@ body {
     margin-bottom: 55px;
 }
 .grundkenntnisse, .kontakt {
-    padding-left: 70px;
+    padding-left: 80px;
 }
 .skillsliste1, .skillsliste2 {
     gap: 10px;
@@ -155,4 +155,29 @@ body {
     width: 95px;
     text-align: center;
     padding-top: 5px;
+}
+.kontaktliste {
+    display: flex;
+    flex-direction: column;
+}
+.kontaktliste .email {
+    display: flex;
+    align-items: center;
+}
+.kontaktliste .handy {
+    display: flex;
+    align-items: center;
+}
+.kontaktliste .wohnort {
+    display: flex;
+    align-items: center;
+}
+.kontaktliste .email li {
+    margin-right: 10px;
+}
+.kontaktliste .handy li {
+    margin-right: 10px;
+}
+.kontaktliste .wohnort li {
+    margin-right: 10px;
 }

@@ -1,8 +1,11 @@
+html {
+    font-size: 16px;
+}
 nav, ul {
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
     margin: 0 auto;
-    top: 0px;
+    top: 0;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -17,7 +20,7 @@ nav {
 nav li a {
     display: block;
     color: #500711;
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     border-radius: 50px;
 }
@@ -26,7 +29,7 @@ nav li a.active {
 }
 h1 { 
   font-family: "Playfair Display", serif;
-  font-size: 120px;
+  font-size: 7.5rem;
   color: #500711;
   text-align: center;
   margin-bottom: 0;
@@ -34,30 +37,30 @@ h1 {
 }
 .header {   
     background-color: #FB96BD;
-    padding: 20px;
-    padding-bottom: 0px;
+    padding: 1.25rem;
+    padding-bottom: 0;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #500711;
 }
 h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: #500711;
 }
 p {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
     color:#500711
 }
 .beschreibung {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
     color: #AE9598;
 }
@@ -67,11 +70,11 @@ body {
 }
 .anschreiben {
     background-color: #ffc95f;
-    padding: 10px; 
+    padding: 0.625rem; 
 }
 .hi {
     font-family: "Playfair Display", serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: normal;
     color:#500711;
     margin-bottom: 0;
@@ -80,57 +83,57 @@ body {
     background-color: #F8F5EB;
 }
 .anschreiben {
-    padding: 50px 50px;
+    padding: 3.125rem 6.25rem;
 }
 .inhalt {
     display: flex;
-    padding: 50px 50px;
+    padding: 3.125rem 6.25rem;
 }
 .lebenslauf {
-    margin-right: 200px; 
+    margin-right: 12.5rem; 
 }
 .studium2 {
-    margin-top: 35px;
+    margin-top: 2.188rem;
 }
 .studium2 h3, .studium2 p {
     margin: 0 auto;
-    margin-bottom: 3px;
+    margin-bottom: 0.188rem;
 }
 .studium1 h3, .studium1 p {
     margin: 0 auto;
-    margin-bottom: 3px;  
+    margin-bottom: 0.188rem;  
 }
 .studium1, .studium2, .fachabitur, .amazon, .hundekindergarten, .mömax {
-    margin-bottom: 35px;
+    margin-bottom: 2.188rem;
 }
 .fachabitur h3, .fachabitur p {
     margin: 0 auto;
-    margin-bottom: 3px;  
+    margin-bottom: 0.188rem;  
 }
 .amazon {
-    margin-top: 35px;
+    margin-top: 2.188rem;
 }
 .amazon h3, .amazon p {
     margin: 0 auto;
-    margin-bottom: 3px;  
+    margin-bottom: 0.188rem;  
 }
 .hundekindergarten h3, .hundekindergarten p {
     margin: 0 auto;
-    margin-bottom: 3px;  
+    margin-bottom: 0.188rem;  
 }
 .mömax h3, .mömax p {
     margin: 0 auto;
-    margin-bottom: 3px;  
+    margin-bottom: 0.188rem;  
 }
 .softwareskills, .grundkenntnisse, .meinefähigkeiten, .kontakt {
-    margin-bottom: 55px;
+    margin-bottom: 4.813rem;
 }
 .grundkenntnisse, .kontakt {
-    padding-left: 80px;
+    padding-left: 5rem;
 }
 .skillsliste1, .skillsliste2 {
-    gap: 10px;
-    padding-bottom: 10px;
+    gap: 0.625rem;
+    padding-bottom: 0.625rem;
 }
 .gesamteliste {
     display: inline-block;
@@ -138,23 +141,23 @@ body {
 .kreativ {
     background-color: #ED9BBD;
     border-radius: 50px;
-    padding: 7px; 
-    width: 60px;
+    padding: 0.438rem; 
+    width: 3.75rem;
     text-align: center;
 }
 .empathisch, .selbstständig {
     background-color: #ED9BBD;
     border-radius: 50px;
-    padding: 7px; 
-    width: 95px;
+    padding: 0.438rem; 
+    width: 5.938rem;
     text-align: center;
 }
 .teamfähig, .lernbereit {
-    border: 2px solid #FFC95F;
+    border: 0.125rem solid #FFC95F;
     border-radius: 50px;
-    width: 95px;
+    width: 5.938rem;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 0.313rem;
 }
 .kontaktliste {
     display: flex;
@@ -173,11 +176,11 @@ body {
     align-items: center;
 }
 .kontaktliste .email li {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 .kontaktliste .handy li {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 .kontaktliste .wohnort li {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }

@@ -24,8 +24,11 @@ nav li a {
     text-decoration: none;
     border-radius: 50px;
 }
-nav li a.active {
+.active {
     background-color: #ffc95f;
+}
+.active1 {
+    background-color: #FB96BD;
 }
 h1 { 
   font-family: "Playfair Display", serif;

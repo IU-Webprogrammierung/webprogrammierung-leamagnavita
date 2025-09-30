@@ -87,7 +87,11 @@ body {
 }
 .inhalt {
     display: flex;
-    padding: 3.125rem 6.25rem;
+    gap: 6.25rem;
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 0 5.938rem;
+    padding-top: 3rem;
 }
 .lebenslauf {
     margin-right: 12.5rem; 

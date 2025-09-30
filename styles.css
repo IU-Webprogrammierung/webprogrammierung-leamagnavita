@@ -38,12 +38,30 @@ h1 {
   margin-bottom: 0;
   line-height: 1.0;
 }
+.number {
+    color:#F5F5F5;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    top: 3.125rem;
+}
+.greenroute {
+    color:#ED9BBD;
+    font-size: 7.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1;
+}
 .header {   
     background-color: #FB96BD;
     padding: 1.25rem;
     padding-bottom: 0;
 }
-
+.greenrouteheader {
+    background-color: #4E663B;
+    padding: 1.25rem;
+    padding-bottom: 0;
+}
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;

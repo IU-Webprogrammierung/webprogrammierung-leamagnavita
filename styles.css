@@ -59,9 +59,14 @@ h1 {
     line-height: 1.5;
 
 }
+.mockupsgreenroute img {
+border-radius: 10px;
+}
 .greenrouteframes {
     background-color: #B1B37E;
+    padding-bottom: 3.125rem;
 }
+
 .header {   
     background-color: #FB96BD;
     padding: 1.25rem;

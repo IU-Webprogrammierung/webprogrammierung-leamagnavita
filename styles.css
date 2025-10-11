@@ -60,7 +60,13 @@ h1 {
 
 }
 .mockupsgreenroute img {
-border-radius: 10px;
+    border-radius: 10px;
+}
+.mockupsgreenroute {
+    display: flex;
+    padding: 3.125rem 3.125rem;
+    gap: 1rem;
+    justify-content: center;
 }
 .greenrouteframes {
     background-color: #B1B37E;

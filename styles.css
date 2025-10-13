@@ -53,7 +53,7 @@ h1 {
 }
 .greenrouteframes p {
     margin: 0 auto;
-    padding: 3.125rem 6.25rem;
+    padding: 3.125rem;
     color:#4E663B;
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
@@ -67,10 +67,10 @@ h1 {
     padding: 3.125rem 3.125rem;
     gap: 1rem;
     justify-content: center;
+    margin: 0;
 }
 .greenrouteframes {
     background-color: #B1B37E;
-    padding-bottom: 3.125rem;
 }
 
 .header {   
@@ -229,4 +229,13 @@ body {
 }
 .kontaktliste .wohnort li {
     margin-right: 0.625rem;
+}
+.touristbikeheader {
+    background-color: #FCDC6B;
+}
+.touristbikeheader h3 {
+    margin-top: 0;
+}
+.touristbikeheader, h3, h1, p {
+    color: #474341;
 }

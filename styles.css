@@ -239,3 +239,50 @@ body {
 .touristbikeheader, h3, h1, p {
     color: #474341;
 }
+.touristbikeheader h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 7rem;
+    
+}
+.touristbikeheader h3 {
+    text-align: center;
+    padding-top: 1.25rem;
+}
+.touristbikeinhalt p {
+    margin: 0 auto;
+    padding: 3.125rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+}
+.touristbikeinhalt, .touristbikemockups {
+    background-color: #FFEFB3;
+}
+.touristbikemockups {
+   position: relative;
+
+}
+#mockup {
+    
+}
+
+#csscodesnippet {
+    position: absolute;
+    z-index: 4;
+    top: 66%;
+    right: 45%;
+}
+#phpcodesnippet {
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    left: 65%;
+    right: 0;
+    bottom: 0;
+}
+#htmlcodesnippet {
+    position: absolute;
+    z-index: 2;
+    left: 60%;
+    top: 10%;
+}
+

@@ -109,6 +109,7 @@ p {
 body {
     margin: 0;
     padding: 0;
+    background-color: #F8F5EB;
 }
 .anschreiben {
     background-color: #ffc95f;
@@ -120,9 +121,6 @@ body {
     font-weight: normal;
     color:#500711;
     margin-bottom: 0;
-}
-body {
-    background-color: #F8F5EB;
 }
 .anschreiben {
     padding: 3.125rem 6.25rem;
@@ -141,11 +139,7 @@ body {
 .studium2 {
     margin-top: 2.188rem;
 }
-.studium2 h3, .studium2 p {
-    margin: 0 auto;
-    margin-bottom: 0.188rem;
-}
-.studium1 h3, .studium1 p {
+.studium1 h3, .studium1 p, .studium2 h3, .studium2 p {
     margin: 0 auto;
     margin-bottom: 0.188rem;  
 }
@@ -209,46 +203,32 @@ body {
     display: flex;
     flex-direction: column;
 }
-.kontaktliste .email {
+.kontaktliste .email, .handy, .wohnort {
     display: flex;
     align-items: center;
 }
-.kontaktliste .handy {
-    display: flex;
-    align-items: center;
-}
-.kontaktliste .wohnort {
-    display: flex;
-    align-items: center;
-}
-.kontaktliste .email li {
+.kontaktliste .email .handy .wohnort li {
     margin-right: 0.625rem;
 }
-.kontaktliste .handy li {
-    margin-right: 0.625rem;
-}
-.kontaktliste .wohnort li {
-    margin-right: 0.625rem;
-}
+
 .touristbikeheader {
     background-color: #FCDC6B;
 }
-.touristbikeheader h3 {
+.touristbikeheader #touristbikeh3 {
     margin-top: 0;
 }
-.touristbikeheader, h3, h1, p {
+.touristbikeheader, #touristbikeh3, #touristbikeh1, #touristbikep {
     color: #474341;
 }
-.touristbikeheader h1 {
+.touristbikeheader #touristbikeh1 {
     font-family: "Inter", sans-serif;
-    font-size: 7rem;
-    
+    font-size: 7rem; 
 }
-.touristbikeheader h3 {
+.touristbikeheader #touristbikeh3 {
     text-align: center;
     padding-top: 1.25rem;
 }
-.touristbikeinhalt p {
+.touristbikeinhalt #touristbikep {
     margin: 0 auto;
     padding: 3.125rem;
     font-family: "Inter", sans-serif;
@@ -259,30 +239,24 @@ body {
 }
 .touristbikemockups {
    position: relative;
-
 }
-#mockup {
-    
-}
-
 #csscodesnippet {
     position: absolute;
     z-index: 4;
-    top: 66%;
+    top: 75%;
     right: 45%;
+    width: 15rem;
+    border-radius: 6rem;
 }
 #phpcodesnippet {
     position: absolute;
     z-index: 3;
-    top: 35%;
-    left: 65%;
+    top: 34%;
+    left: 59.5%;
     right: 0;
     bottom: 0;
+    width: 29rem;
+    border-radius: 6rem;
 }
-#htmlcodesnippet {
-    position: absolute;
-    z-index: 2;
-    left: 60%;
-    top: 10%;
-}
+
 

@@ -30,6 +30,7 @@ nav li a {
 .active1 {
     background-color: #FB96BD;
 }
+
 h1 { 
   font-family: "Playfair Display", serif;
   font-size: 7.5rem;
@@ -99,6 +100,22 @@ p {
     font-size: 0.875rem;
     font-weight: normal;
     color:#500711
+}
+.anschreiben, #anschreiben1 {
+    position: relative;
+    z-index: 3;
+}
+.hi {
+    position: absolute;
+    z-index: 2;
+    top: -3%;
+}
+#scribblehi {
+    position: absolute;
+    z-index: 1;
+    top: -3%;
+    left: 5.5%;
+    width: 8rem;
 }
 .beschreibung {
     font-family: "Poppins", sans-serif;

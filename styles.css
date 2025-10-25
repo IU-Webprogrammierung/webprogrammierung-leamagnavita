@@ -236,6 +236,11 @@ body {
 .grundkenntnisse, .kontakt {
     padding-left: 5rem;
 }
+@media (max-width: 768px) {
+    .grundkenntnisse, .kontakt {
+        padding-left: 0;
+    }
+}
 .skillsliste1, .skillsliste2 {
     gap: 0.625rem;
     padding-bottom: 0.625rem;

@@ -150,6 +150,22 @@ body {
 .anschreiben {
     padding: 3.125rem 6.25rem;
 }
+
+@media (min-width: 768px) {
+    .anschreiben summary {
+        display: none;
+    }
+    .anschreiben [open] summary {
+        pointer-events: none;
+    }  
+    .anschreiben  {
+        overflow: visible;
+    } 
+    .anschreiben p {
+        display: block;
+    } 
+    
+}
 .inhalt {
     display: flex;
     justify-content: space-between;

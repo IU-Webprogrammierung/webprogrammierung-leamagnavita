@@ -144,6 +144,8 @@ body {
 }
 .inhalt {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 6.25rem;
     max-width: 68.75rem;
     margin: 0 auto;
@@ -154,10 +156,16 @@ body {
 #lebenslaufstrahl {
     height: 43rem;
     margin-top: 3.5rem;
+    flex-shrink: 0;
 }
 .lebenslauf {
-    margin-right: 15rem; 
-    margin-left: -5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-direction: row;
+}
+.lebenslauf article {
+    margin-bottom: 2rem;
 }
 .studium2 {
     margin-top: 2.188rem;
@@ -187,6 +195,9 @@ body {
 .mömax h3, .mömax p {
     margin: 0 auto;
     margin-bottom: 0.188rem;  
+}
+.skills {
+    flex: 1;
 }
 .grundkenntnisse, .meinefähigkeiten, .kontakt {
     padding-bottom: 4.813rem;
@@ -240,7 +251,11 @@ body {
 .kontaktliste .email .handy .wohnort li {
     margin-right: 0.625rem;
 }
-
+@media (max-width: 768px) {
+    .inhalt {
+        flex-direction: column;
+    }
+}
 .touristbikeheader {
     background-color: #FCDC6B;
 }
@@ -318,3 +333,9 @@ body {
     margin-left: -85px;
     width: 4rem;
 }
+
+   
+
+    
+
+    

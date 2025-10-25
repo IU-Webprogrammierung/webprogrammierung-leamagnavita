@@ -106,17 +106,23 @@ p {
     z-index: 3;
 }
 .hi {
-    position: absolute;
+    position: relative;
     z-index: 2;
     top: -3%;
+    margin: 0;
 }
 #scribblehi {
     position: absolute;
     z-index: 1;
-    top: -3%;
-    left: 5.5%;
-    width: 8rem;
+    top: -65%;
+    left: -90%;
+    width: 300%;
 }
+.hi-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 .beschreibung {
     font-family: "Poppins", sans-serif;
     font-size: 0.875rem;
@@ -132,6 +138,7 @@ body {
     background-color: #ffc95f;
     padding: 0.625rem; 
 }
+
 .hi {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
@@ -139,6 +146,7 @@ body {
     color:#500711;
     margin-bottom: 0;
 }
+
 .anschreiben {
     padding: 3.125rem 6.25rem;
 }

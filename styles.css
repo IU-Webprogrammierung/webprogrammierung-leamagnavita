@@ -198,7 +198,8 @@ p {
 }
 
 #lebenslaufstrahl {
-    height: 43rem;
+    display: block;
+    height: 43rem; 
     margin-top: 3.5rem;
     flex-shrink: 0;
 }
@@ -403,11 +404,16 @@ p {
 #lebenslaufstrahl {
     margin-left: -85px;
     width: 4rem;
+    height: auto;
 }
 
 @media (max-width: 768px) {
     h1, .greenroute, .touristbikeheader .touristbike {
-        font-size: 80px;
+        font-size: 70px;
+    }
+    #lebenslaufstrahl {
+        height: auto;
+        min-height: 400px;
     }
 }
 @media (max-width: 768px) {
@@ -427,9 +433,6 @@ p {
         align-items: center;
         padding: 1rem;
         overflow: hidden;
-    }
-    .touristbikemockups img:last-child {
-        margin-bottom: 0;
     }
 }
 

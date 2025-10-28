@@ -407,7 +407,10 @@ p {
 
 @media (max-width: 768px) {
     h1, .greenroute, .touristbikeheader .touristbike {
-        font-size: 80px;
+        font-size: 70px;
+    }
+    #lebenslaufstrahl {
+        height: 450px;
     }
 }
 @media (max-width: 768px) {

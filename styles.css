@@ -1,6 +1,12 @@
 html {
     font-size: 16px;
 }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F5EB;
+    overflow-x: hidden;
+}
 nav, ul {
     list-style-type: none;
     padding: 0;
@@ -52,10 +58,11 @@ h1 {
     text-align: center;
     line-height: 1;
 }
+
 .greenrouteframes p {
     margin: 0 auto;
     padding: 3.125rem;
-    color:#4E663B;
+    color: #4E663B;
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
 
@@ -84,6 +91,16 @@ h1 {
     padding: 1.25rem;
     padding-bottom: 0;
 }
+@media (max-width: 768px) {
+    .mockupsgreenroute {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .mockupsgreenroute img {
+        flex: 0 0 auto;
+    }
+}
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
@@ -103,11 +120,17 @@ p {
 }
 .anschreiben, #anschreiben1 {
     position: relative;
-    z-index: 3;
+    z-index: 2;
+}
+#ausklappen {
+    padding-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #500711;
+    font-size: 0.875rem;
 }
 .hi {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     top: -3%;
     margin: 0;
 }
@@ -129,11 +152,7 @@ p {
     font-weight: normal;
     color: #594d4e;
 }
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #F8F5EB;
-}
+
 .anschreiben {
     background-color: #ffc95f;
     padding: 0.625rem; 
@@ -166,6 +185,7 @@ body {
     } 
     
 }
+
 .inhalt {
     display: flex;
     justify-content: space-between;
@@ -241,6 +261,11 @@ body {
         padding-left: 0;
     }
 }
+@media (max-width: 768px) {
+    .skills {
+        margin-top: -35%;
+    }
+}
 .skillsliste1, .skillsliste2 {
     gap: 0.625rem;
     padding-bottom: 0.625rem;
@@ -291,10 +316,10 @@ body {
 .touristbikeheader #touristbikeh3 {
     margin-top: 0;
 }
-.touristbikeheader, #touristbikeh3, #touristbikeh1, #touristbikep {
+.touristbikeheader, #touristbikeh3, .touristbike, #touristbikep {
     color: #474341;
 }
-.touristbikeheader #touristbikeh1 {
+.touristbikeheader .touristbike {
     font-family: "Inter", sans-serif;
     font-size: 7rem; 
 }
@@ -313,6 +338,15 @@ body {
 }
 .touristbikemockups {
    position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+#mockup {
+    max-width: 90%;
+    height: auto;
 }
 #csscodesnippet {
     position: absolute;
@@ -327,10 +361,18 @@ body {
     z-index: 1;
     top: 34%;
     left: 59.5%;
-    right: 0;
     bottom: 0;
     width: 29rem;
     border-radius: 6rem;
+}
+#mockups, #csscodesnippet, #phpcodesnippet {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#csscodesnippet {
+    bottom: 0;
+    top: auto;
 }
 .softwarelogos {
     position: relative;
@@ -362,6 +404,35 @@ body {
     margin-left: -85px;
     width: 4rem;
 }
+
+@media (max-width: 768px) {
+    h1, .greenroute, .touristbikeheader .touristbike {
+        font-size: 80px;
+    }
+}
+@media (max-width: 768px) {
+    #mockup, #csscodesnippet, #phpcodesnippet {
+        position: static;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0.5rem 0;
+        border-radius: 1rem;
+    }
+    #csscodesnippet, #phpcodesnippet {
+        max-width: 350px;
+    }
+    .touristbikemockups {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    .touristbikemockups img:last-child {
+        margin-bottom: 0;
+    }
+}
+
 
    
 

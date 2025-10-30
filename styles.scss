@@ -540,6 +540,17 @@ p {
         margin: 0 auto;
     }
 
+    #greenroutetext,
+    #touristbiketext {
+        width: 89%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .mockupsgreenroute {
+        gap: 3rem;
+    }
+
     .touristbikemockups {
         position: relative;
         overflow: hidden;

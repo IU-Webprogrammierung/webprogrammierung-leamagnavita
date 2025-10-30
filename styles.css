@@ -313,6 +313,27 @@ p {
   margin-right: 0.625rem;
 }
 
+#maillink,
+#handynummer {
+  color: #500711;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px;
+}
+#maillink:hover,
+#handynummer:hover {
+  text-decoration: underline;
+  text-decoration-color: #500711;
+}
+
+#wohnort {
+  padding-left: 10px;
+}
+
+.material-symbols-outlined {
+  color: #500711;
+}
+
 .touristbikeheader {
   background-color: #FCDC6B;
 }

@@ -39,7 +39,7 @@ nav {
             a {
                 display: block;
                 color: #500711;
-                font-family: "inter",  sans-serif;
+                font-family: "inter", sans-serif;
                 font-weight: 500;
                 font-size: 14px;
                 padding: 0.75rem 1rem;
@@ -308,6 +308,27 @@ p {
     li {
         margin-right: 0.625rem;
     }
+}
+
+#maillink,
+#handynummer {
+    color: #500711;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: #500711;
+    }
+}
+
+#wohnort {
+    padding-left: 10px;
+}
+
+.material-symbols-outlined {
+    color:#500711;
 }
 
 .touristbikeheader {

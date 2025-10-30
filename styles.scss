@@ -539,6 +539,48 @@ p {
         max-width: 1600px;
         margin: 0 auto;
     }
+
+    .touristbikemockups {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        #mockup,
+        #csscodesnippet,
+        #phpcodesnippet {
+            max-width: 120%;
+            height: auto;
+            display: block;
+        }
+
+        #mockup {
+            max-width: 90%;
+            height: auto;
+        }
+
+        #csscodesnippet {
+            position: absolute;
+            z-index: 2;
+            top: auto;
+            bottom: 0;
+            right: 75%;
+            width: 20rem;
+            border-radius: 6rem;
+        }
+
+        #phpcodesnippet {
+            position: absolute;
+            z-index: 1;
+            top: 34%;
+            left: 60%;
+            bottom: 0;
+            width: 40rem;
+            border-radius: 6rem;
+        }
+    }
 }
 
 

@@ -517,6 +517,43 @@ p {
     max-width: 1600px;
     margin: 0 auto;
   }
+  .touristbikemockups {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .touristbikemockups #mockup,
+  .touristbikemockups #csscodesnippet,
+  .touristbikemockups #phpcodesnippet {
+    max-width: 120%;
+    height: auto;
+    display: block;
+  }
+  .touristbikemockups #mockup {
+    max-width: 90%;
+    height: auto;
+  }
+  .touristbikemockups #csscodesnippet {
+    position: absolute;
+    z-index: 2;
+    top: auto;
+    bottom: 0;
+    right: 75%;
+    width: 20rem;
+    border-radius: 6rem;
+  }
+  .touristbikemockups #phpcodesnippet {
+    position: absolute;
+    z-index: 1;
+    top: 34%;
+    left: 60%;
+    bottom: 0;
+    width: 40rem;
+    border-radius: 6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

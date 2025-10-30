@@ -494,29 +494,5 @@ p {
     display: block;
   }
 }
-@media (min-width: 1200px) and (max-width: 1599px) {
-  .inhalt {
-    gap: 25rem;
-  }
-  #greenroutetext,
-  #touristbiketext {
-    width: 89%;
-    text-align: left;
-    margin: 0 auto;
-  }
-  .mockupsgreenroute {
-    gap: 3rem;
-  }
-}
-@media (min-width: 1600px) {
-  .inhalt {
-    gap: 25rem;
-    max-width: 1600px;
-  }
-  .main {
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */

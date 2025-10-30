@@ -1,444 +1,498 @@
+@charset "UTF-8";
 html {
-    font-size: 16px;
-}
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #F8F5EB;
-    overflow-x: hidden;
-}
-nav, ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-}
-nav {
-    background-color: #F8F5EB;
-    width: fit-content;
-    border-radius: 50px;
-    margin: 0 auto;
-    position: sticky;
-}
-nav li a {
-    display: block;
-    color: #500711;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    border-radius: 50px;
-}
-.active {
-    background-color: #ffc95f;
-}
-.active1 {
-    background-color: #FB96BD;
+  font-size: 16px;
 }
 
-h1 { 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8F5EB;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #FB96BD;
+  padding: 1.25rem;
+  padding-bottom: 0;
+}
+
+nav {
+  background-color: #F8F5EB;
+  width: fit-content;
+  border-radius: 50px;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  border-radius: 50px;
+}
+nav ul li a {
+  display: block;
+  color: #500711;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+}
+nav ul li a.active {
+  background-color: #ffc95f;
+}
+nav ul li a.active1 {
+  background-color: #FB96BD;
+}
+
+#portfolioheading {
   font-family: "Playfair Display", serif;
   font-size: 7.5rem;
   color: #500711;
   text-align: center;
   margin-bottom: 0;
-  line-height: 1.0;
+  line-height: 1;
 }
-.number {
-    color:#F5F5F5;
-    font-size: 1rem;
-    text-align: center;
-    position: relative;
-    top: 3.125rem;
+
+.greenrouteheader {
+  background-color: #4E663B;
+  padding: 1.25rem;
+  padding-bottom: 0;
 }
+
+#projekt01 {
+  color: #F5F5F5;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  top: 3.125rem;
+}
+
 .greenroute {
-    color:#FB96BD;
-    font-size: 7.5rem;
-    text-align: center;
-    line-height: 1;
+  color: #FB96BD;
+  font-size: 7.5rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0;
 }
 
+.greenrouteframes {
+  margin: 0 auto;
+  padding: 3.125rem;
+  background-color: #B1B37E;
+}
 .greenrouteframes p {
-    margin: 0 auto;
-    padding: 3.125rem;
-    color: #4E663B;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #4E663B;
+}
 
+.mockupsgreenroute {
+  display: flex;
+  padding: 3.125rem 3.125rem;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0;
 }
 .mockupsgreenroute img {
-    border-radius: 10px;
-}
-.mockupsgreenroute {
-    display: flex;
-    padding: 3.125rem 3.125rem;
-    gap: 1rem;
-    justify-content: center;
-    margin: 0;
-}
-.greenrouteframes {
-    background-color: #B1B37E;
+  border-radius: 10px;
 }
 
-.header {   
-    background-color: #FB96BD;
-    padding: 1.25rem;
-    padding-bottom: 0;
-}
-.greenrouteheader {
-    background-color: #4E663B;
-    padding: 1.25rem;
-    padding-bottom: 0;
-}
-@media (max-width: 768px) {
-    .mockupsgreenroute {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: auto;
-    }
-    .mockupsgreenroute img {
-        flex: 0 0 auto;
-    }
-}
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   color: #500711;
 }
+
 h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: #500711;
 }
+
 p {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.875rem;
-    font-weight: normal;
-    color:#500711
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #500711;
 }
-.anschreiben, #anschreiben1 {
-    position: relative;
-    z-index: 2;
+
+.anschreiben,
+#anschreiben1 {
+  position: relative;
+  z-index: 2;
 }
+
 #ausklappen {
-    padding-top: 1rem;
-    font-family: "Poppins", sans-serif;
-    color: #500711;
-    font-size: 0.875rem;
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #500711;
+  font-size: 0.875rem;
 }
+
 .hi {
-    position: relative;
-    z-index: 3;
-    top: -3%;
-    margin: 0;
+  position: relative;
+  z-index: 3;
+  top: -3%;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #500711;
+  margin-bottom: 0;
 }
+
 #scribblehi {
-    position: absolute;
-    z-index: 1;
-    top: -65%;
-    left: -90%;
-    width: 300%;
+  position: absolute;
+  z-index: 1;
+  top: -65%;
+  left: -90%;
+  width: 300%;
 }
+
 .hi-wrapper {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .beschreibung {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.875rem;
-    font-weight: normal;
-    color: #594d4e;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #594d4e;
 }
 
 .anschreiben {
-    background-color: #ffc95f;
-    padding: 0.625rem; 
-}
-
-.hi {
-    font-family: "Playfair Display", serif;
-    font-size: 2rem;
-    font-weight: normal;
-    color:#500711;
-    margin-bottom: 0;
-}
-
-.anschreiben {
-    padding: 3.125rem 6.25rem;
-}
-
-@media (min-width: 768px) {
-    .anschreiben summary {
-        display: none;
-    }
-    .anschreiben [open] summary {
-        pointer-events: none;
-    }  
-    .anschreiben  {
-        overflow: visible;
-    } 
-    .anschreiben p {
-        display: block;
-    } 
-    
+  background-color: #ffc95f;
+  padding: 3.125rem 6.25rem;
 }
 
 .inhalt {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 6.25rem;
-    max-width: 68.75rem;
-    margin: 0 auto;
-    padding: 0 5.938rem;
-    padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6.25rem;
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: 0 5.938rem;
+  padding-top: 3rem;
 }
 
 #lebenslaufstrahl {
-    display: block;
-    height: 43rem; 
-    margin-top: 3.5rem;
-    flex-shrink: 0;
+  height: 43rem;
+  margin-top: 3.5rem;
+  display: block;
+  margin: 3.5rem auto 0 -85px;
+  width: 4rem;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
+
 .lebenslauf {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex-direction: row;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-direction: row;
 }
 .lebenslauf article {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
-.studium2 {
-    margin-top: 2.188rem;
+
+.studium2,
+.studium1,
+.amazon,
+.fachabitur,
+.hundekindergarten,
+.mömax {
+  margin-bottom: 2.188rem;
 }
-.studium1 h3, .studium1 p, .studium2 h3, .studium2 p {
-    margin: 0 auto;
-    margin-bottom: 0.188rem;  
+.studium2 h3,
+.studium2 p,
+.studium1 h3,
+.studium1 p,
+.amazon h3,
+.amazon p,
+.fachabitur h3,
+.fachabitur p,
+.hundekindergarten h3,
+.hundekindergarten p,
+.mömax h3,
+.mömax p {
+  margin: 0 auto;
+  margin-bottom: 0.188rem;
 }
-.studium1, .studium2, .fachabitur, .amazon, .hundekindergarten, .mömax {
-    margin-bottom: 2.188rem;
+
+.studium2 .amazon {
+  margin-top: 2.188rem;
 }
-.fachabitur h3, .fachabitur p {
-    margin: 0 auto;
-    margin-bottom: 0.188rem;  
-}
-.amazon {
-    margin-top: 2.188rem;
-}
-.amazon h3, .amazon p {
-    margin: 0 auto;
-    margin-bottom: 0.188rem;  
-}
-.hundekindergarten h3, .hundekindergarten p {
-    margin: 0 auto;
-    margin-bottom: 0.188rem;  
-}
-.mömax h3, .mömax p {
-    margin: 0 auto;
-    margin-bottom: 0.188rem;  
-}
+
 .skills {
-    flex: 1;
+  flex: 1;
 }
-.grundkenntnisse, .meinefähigkeiten, .kontakt {
-    padding-bottom: 4.813rem;
-    margin: 0;
+
+.grundkenntnisse,
+.kontakt {
+  padding-bottom: 4.813rem;
+  margin: 0;
+  padding-left: 5rem;
 }
+
+.meinefähigkeiten {
+  padding-bottom: 4.813rem;
+  margin: 0;
+}
+
 .grundkenntnisse {
-    padding-top: 9rem;
+  padding-top: 9rem;
 }
+
 .softwareskills {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-.grundkenntnisse, .kontakt {
-    padding-left: 5rem;
+
+.skillsliste1,
+.skillsliste2 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.625rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0.625rem;
 }
-@media (max-width: 768px) {
-    .grundkenntnisse, .kontakt {
-        padding-left: 0;
-    }
+
+.kreativ,
+.empathisch,
+.selbstständig {
+  background-color: #ED9BBD;
+  border-radius: 50px;
+  padding: 0.438rem;
+  width: 5.938rem;
+  text-align: center;
 }
-@media (max-width: 768px) {
-    .skills {
-        margin-top: -35%;
-    }
-}
-.skillsliste1, .skillsliste2 {
-    gap: 0.625rem;
-    padding-bottom: 0.625rem;
-}
-.gesamteliste {
-    display: inline-block;
-}
+
 .kreativ {
-    background-color: #ED9BBD;
-    border-radius: 50px;
-    padding: 0.438rem; 
-    width: 3.75rem;
-    text-align: center;
+  width: 3.75rem;
 }
-.empathisch, .selbstständig {
-    background-color: #ED9BBD;
-    border-radius: 50px;
-    padding: 0.438rem; 
-    width: 5.938rem;
-    text-align: center;
+
+.teamfähig,
+.lernbereit {
+  border: 0.125rem solid #FFC95F;
+  border-radius: 50px;
+  width: 5.938rem;
+  text-align: center;
+  padding-top: 0.313rem;
 }
-.teamfähig, .lernbereit {
-    border: 0.125rem solid #FFC95F;
-    border-radius: 50px;
-    width: 5.938rem;
-    text-align: center;
-    padding-top: 0.313rem;
-}
+
 .kontaktliste {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.kontaktliste .email, .handy, .wohnort {
-    display: flex;
-    align-items: center;
+
+.kontaktliste .email,
+.handy,
+.wohnort {
+  display: flex;
+  align-items: center;
 }
-.kontaktliste .email .handy .wohnort li {
-    margin-right: 0.625rem;
+.kontaktliste .email li,
+.handy li,
+.wohnort li {
+  margin-right: 0.625rem;
 }
-@media (max-width: 768px) {
-    .inhalt {
-        flex-direction: column;
-    }
+
+#maillink,
+#handynummer {
+  color: #500711;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px;
 }
+#maillink:hover,
+#handynummer:hover {
+  text-decoration: underline;
+  text-decoration-color: #500711;
+}
+
+#wohnort {
+  padding-left: 10px;
+}
+
+.material-symbols-outlined {
+  color: #500711;
+}
+
 .touristbikeheader {
-    background-color: #FCDC6B;
+  background-color: #FCDC6B;
 }
-.touristbikeheader #touristbikeh3 {
-    margin-top: 0;
+.touristbikeheader #touristbikeheading {
+  font-family: "Inter", sans-serif;
+  font-size: 7rem;
+  text-align: center;
+  margin-bottom: 0;
 }
-.touristbikeheader, #touristbikeh3, .touristbike, #touristbikep {
-    color: #474341;
+.touristbikeheader #projekt02 {
+  text-align: center;
+  padding-top: 1.25rem;
+  margin-top: 0;
+  color: #474341;
+  font-size: 1rem;
+  font-weight: 600;
 }
-.touristbikeheader .touristbike {
-    font-family: "Inter", sans-serif;
-    font-size: 7rem; 
+
+#touristbikeheading,
+#projekt02,
+#touristbiketext {
+  color: #474341;
 }
-.touristbikeheader #touristbikeh3 {
-    text-align: center;
-    padding-top: 1.25rem;
+
+.touristbikeinhalt #touristbiketext {
+  margin: 0 auto;
+  padding: 3.125rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
 }
-.touristbikeinhalt #touristbikep {
-    margin: 0 auto;
-    padding: 3.125rem;
-    font-family: "Inter", sans-serif;
-    line-height: 1.5;
-}
-.touristbikeinhalt, .touristbikemockups {
-    background-color: #FFEFB3;
-}
+
+.touristbikeinhalt,
 .touristbikemockups {
-   position: relative;
-   overflow: hidden;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
+  background-color: #FFEFB3;
 }
-#mockup {
-    max-width: 90%;
-    height: auto;
+
+.touristbikemockups {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-#csscodesnippet {
-    position: absolute;
-    z-index: 2;
-    top: 75%;
-    right: 45%;
-    width: 15rem;
-    border-radius: 6rem;
+.touristbikemockups #mockup,
+.touristbikemockups #csscodesnippet,
+.touristbikemockups #phpcodesnippet {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-#phpcodesnippet {
-    position: absolute;
-    z-index: 1;
-    top: 34%;
-    left: 59.5%;
-    bottom: 0;
-    width: 29rem;
-    border-radius: 6rem;
+.touristbikemockups #mockup {
+  max-width: 90%;
+  height: auto;
 }
-#mockups, #csscodesnippet, #phpcodesnippet {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.touristbikemockups #csscodesnippet {
+  position: absolute;
+  z-index: 2;
+  top: auto;
+  bottom: 0;
+  right: 45%;
+  width: 15rem;
+  border-radius: 6rem;
 }
-#csscodesnippet {
-    bottom: 0;
-    top: auto;
+.touristbikemockups #phpcodesnippet {
+  position: absolute;
+  z-index: 1;
+  top: 34%;
+  left: 59.5%;
+  bottom: 0;
+  width: 29rem;
+  border-radius: 6rem;
 }
+
 .softwarelogos {
-    position: relative;
+  position: relative;
 }
-#figmalogo {
-    position: absolute;
-    z-index: 3;
-    left: -4%;
-    width: 4.5rem;
-    height: 4.5rem;
+.softwarelogos #figmalogo {
+  position: absolute;
+  z-index: 3;
+  left: -4%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
-#indesignlogo {
-    position: absolute;
-    z-index: 2; 
-    left: 12%;
-    margin-top: 9%;
-    width: 4.5rem;
-    height: 4.5rem;
+.softwarelogos #indesignlogo {
+  position: absolute;
+  z-index: 2;
+  left: 12%;
+  margin-top: 9%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
-#illustratorlogo {
-    position: absolute;
-    z-index: 1; 
-    top: 50%;
-    left: 32%;
-    width: 4.5rem;
-    height: 4.5rem;
+.softwarelogos #illustratorlogo {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 32%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
-#lebenslaufstrahl {
-    margin-left: -85px;
-    width: 4rem;
+
+@media (max-width: 768px) {
+  .inhalt {
+    flex-direction: column;
+  }
+  .grundkenntnisse,
+  .kontakt {
+    padding-left: 0;
+  }
+  .skills {
+    margin-top: -35%;
+  }
+  #portfolioheading,
+  .greenroute,
+  .touristbikeheader #touristbikeheading {
+    font-size: 70px;
+  }
+  .touristbikemockups {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .touristbikemockups #mockup,
+  .touristbikemockups #csscodesnippet,
+  .touristbikemockups #phpcodesnippet {
+    position: static;
+    width: 100%;
+    max-width: 500px;
     height: auto;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+  }
+  .touristbikemockups #csscodesnippet,
+  .touristbikemockups #phpcodesnippet {
+    max-width: 350px;
+  }
+  .mockupsgreenroute {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .mockupsgreenroute img {
+    flex: 0 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .anschreiben {
+    pointer-events: none;
+  }
+  .anschreiben [open] {
+    overflow: visible;
+  }
+  .anschreiben [open] summary {
+    display: none;
+  }
+  .anschreiben [open] summary p {
+    display: block;
+  }
 }
 
-@media (max-width: 768px) {
-    h1, .greenroute, .touristbikeheader .touristbike {
-        font-size: 70px;
-    }
-    #lebenslaufstrahl {
-        height: auto;
-        min-height: 400px;
-    }
-}
-@media (max-width: 768px) {
-    #mockup, #csscodesnippet, #phpcodesnippet {
-        position: static;
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        margin: 0.5rem 0;
-        border-radius: 1rem;
-    }
-    #csscodesnippet, #phpcodesnippet {
-        max-width: 350px;
-    }
-    .touristbikemockups {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        overflow: hidden;
-    }
-}
-
-
-   
-
-    
-
-    
+/*# sourceMappingURL=styles.css.map */

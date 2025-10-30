@@ -1,0 +1,517 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F5EB;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #FB96BD;
+    padding: 1.25rem;
+    padding-bottom: 0;
+}
+
+nav {
+    background-color: #F8F5EB;
+    width: fit-content;
+    border-radius: 50px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        li {
+            border-radius: 50px;
+
+            a {
+                display: block;
+                color: #500711;
+                font-family: "inter", sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                padding: 0.75rem 1rem;
+                text-decoration: none;
+                border-radius: 50px; 
+
+                    &.active {
+                        background-color: #ffc95f;
+                    }
+
+                    &.active1 {
+                        background-color: #FB96BD;
+                    }
+            }
+        }
+    }
+}
+
+#portfolioheading {
+    font-family: "Playfair Display", serif;
+    font-size: 7.5rem;
+    color: #500711;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.0;
+}
+
+.greenrouteheader {
+    background-color: #4E663B;
+    padding: 1.25rem;
+    padding-bottom: 0;
+}
+
+#projekt01 {
+    color: #F5F5F5;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    top: 3.125rem;
+}
+
+.greenroute {
+    color: #FB96BD;
+    font-size: 7.5rem;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.greenrouteframes {
+    margin: 0 auto;
+    padding: 3.125rem;
+    background-color: #B1B37E;
+
+    p {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.5;
+        color: #4E663B;
+    }
+}
+
+.mockupsgreenroute {
+    display: flex;
+    padding: 3.125rem 3.125rem;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #500711;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #500711;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #500711
+}
+
+.anschreiben,
+#anschreiben1 {
+    position: relative;
+    z-index: 2;
+}
+
+#ausklappen {
+    padding-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #500711;
+    font-size: 0.875rem;
+}
+
+.hi {
+    position: relative;
+    z-index: 3;
+    top: -3%;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #500711;
+    margin-bottom: 0;
+}
+
+#scribblehi {
+    position: absolute;
+    z-index: 1;
+    top: -65%;
+    left: -90%;
+    width: 300%;
+}
+
+.hi-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.beschreibung {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #594d4e;
+}
+
+.anschreiben {
+    background-color: #ffc95f;
+    padding: 3.125rem 6.25rem;
+}
+
+.inhalt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6.25rem;
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 0 5.938rem;
+    padding-top: 3rem;
+}
+
+#lebenslaufstrahl {
+    height: 43rem;
+    margin-top: 3.5rem;
+    display: block;
+    margin: 3.5rem auto 0 -85px;
+    width: 4rem;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.lebenslauf {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-direction: row;
+
+    article {
+        margin-bottom: 2rem;
+    }
+}
+
+.studium2,
+.studium1,
+.amazon,
+.fachabitur,
+.hundekindergarten,
+.mömax {
+    margin-bottom: 2.188rem;
+
+    h3,
+    p {
+        margin: 0 auto;
+        margin-bottom: 0.188rem;
+    }
+}
+
+.studium2 .amazon {
+    margin-top: 2.188rem;
+}
+
+.skills {
+    flex: 1;
+}
+
+.grundkenntnisse,
+.kontakt {
+    padding-bottom: 4.813rem;
+    margin: 0;
+    padding-left: 5rem;
+}
+
+.meinefähigkeiten {
+    padding-bottom: 4.813rem;
+    margin: 0;
+}
+
+.grundkenntnisse {
+    padding-top: 9rem;
+}
+
+.softwareskills {
+    margin-bottom: 0;
+}
+
+.skillsliste1,
+.skillsliste2 {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.625rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0.625rem;
+}
+
+.kreativ,
+.empathisch,
+.selbstständig {
+    background-color: #ED9BBD;
+    border-radius: 50px;
+    padding: 0.438rem;
+    width: 5.938rem;
+    text-align: center;
+}
+
+.kreativ {
+    width: 3.75rem;
+}
+
+.teamfähig,
+.lernbereit {
+    border: 0.125rem solid #FFC95F;
+    border-radius: 50px;
+    width: 5.938rem;
+    text-align: center;
+    padding-top: 0.313rem;
+}
+
+.kontaktliste {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontaktliste .email,
+.handy,
+.wohnort {
+    display: flex;
+    align-items: center;
+
+    li {
+        margin-right: 0.625rem;
+    }
+}
+
+#maillink,
+#handynummer {
+    color: #500711;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: #500711;
+    }
+}
+
+#wohnort {
+    padding-left: 10px;
+}
+
+.material-symbols-outlined {
+    color:#500711;
+}
+
+.touristbikeheader {
+    background-color: #FCDC6B;
+
+    #touristbikeheading {
+        font-family: "Inter", sans-serif;
+        font-size: 7rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+        #projekt02 {
+            text-align: center;
+            padding-top: 1.25rem;
+            margin-top: 0;
+            color: #474341;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+}
+
+#touristbikeheading,
+#projekt02,
+#touristbiketext {
+    color: #474341;
+  }
+
+.touristbikeinhalt #touristbiketext {
+    margin: 0 auto;
+    padding: 3.125rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+}
+
+.touristbikeinhalt,
+.touristbikemockups {
+    background-color: #FFEFB3;
+}
+
+.touristbikemockups {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+        #mockup,
+        #csscodesnippet,
+        #phpcodesnippet {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    
+            #mockup {
+                max-width: 90%;
+                height: auto;
+            }
+    
+                #csscodesnippet {
+                    position: absolute;
+                    z-index: 2;
+                    top: auto;
+                    bottom: 0;
+                    right: 45%;
+                    width: 15rem;
+                    border-radius: 6rem;
+                }
+    
+                    #phpcodesnippet {
+                        position: absolute;
+                        z-index: 1;
+                        top: 34%;
+                        left: 59.5%;
+                        bottom: 0;
+                        width: 29rem;
+                        border-radius: 6rem;
+                    }  
+}
+
+.softwarelogos {
+    position: relative;
+
+    #figmalogo {
+        position: absolute;
+        z-index: 3;
+        left: -4%;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    
+        #indesignlogo {
+            position: absolute;
+            z-index: 2;
+            left: 12%;
+            margin-top: 9%;
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
+            #illustratorlogo {
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 32%;
+                width: 4.5rem;
+                height: 4.5rem;
+            }
+}
+
+@media (max-width: 768px) {
+    .inhalt {
+        flex-direction: column;
+    }
+
+    .grundkenntnisse,
+    .kontakt {
+        padding-left: 0;
+    }
+
+    .skills {
+        margin-top: -35%;
+    }
+
+    #portfolioheading,
+    .greenroute,
+    .touristbikeheader #touristbikeheading {
+        font-size: 70px;
+    }
+
+    .touristbikemockups {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        overflow: hidden;
+    
+        #mockup,
+        #csscodesnippet,
+        #phpcodesnippet {
+            position: static;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 0.5rem 0;
+            border-radius: 1rem;
+        }
+
+        #csscodesnippet,
+        #phpcodesnippet {
+            max-width: 350px;
+        }
+
+    }
+    .mockupsgreenroute {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        img {
+            flex: 0 0 auto;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .anschreiben {
+        pointer-events: none;
+
+        [open] {
+            overflow: visible;
+
+            summary {
+                display: none;
+
+                p {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+

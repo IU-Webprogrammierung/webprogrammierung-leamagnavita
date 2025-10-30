@@ -73,7 +73,7 @@ nav {
     padding-bottom: 0;
 }
 
-.number {
+#projekt01 {
     color: #F5F5F5;
     font-size: 1rem;
     text-align: center;
@@ -320,15 +320,18 @@ p {
         margin-bottom: 0;
     }
     
-        #touristbikenumber {
+        #projekt02 {
             text-align: center;
             padding-top: 1.25rem;
             margin-top: 0;
+            color: #474341;
+            font-size: 1rem;
+            font-weight: 600;
         }
 }
 
 #touristbikeheading,
-#touristbikenumber,
+#projekt02,
 #touristbiketext {
     color: #474341;
   }

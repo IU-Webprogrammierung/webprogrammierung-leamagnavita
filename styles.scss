@@ -210,6 +210,7 @@ p {
     align-items: flex-start;
     gap: 1.5rem;
     flex-direction: row;
+    white-space: nowrap;
 
     article {
         margin-bottom: 2rem;

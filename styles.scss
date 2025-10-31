@@ -236,10 +236,6 @@ p {
     margin-top: 2.188rem;
 }
 
-.skills {
-    flex: 1;
-}
-
 .grundkenntnisse,
 .kontakt {
     padding-bottom: 4.813rem;
@@ -484,6 +480,20 @@ p {
             max-width: 350px;
         }
 
+        #mockup {
+            max-width: 400px;
+        }
+
+
+    }
+    .touristbikeinhalt {
+        text-align: left;
+        padding-left: 1.3rem;
+    
+        #touristbiketext {
+            margin: 0;
+            max-width: none;
+        }
     }
     .mockupsgreenroute {
         display: flex;

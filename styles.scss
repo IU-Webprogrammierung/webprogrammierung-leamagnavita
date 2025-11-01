@@ -210,6 +210,7 @@ p {
     align-items: flex-start;
     gap: 1.5rem;
     flex-direction: row;
+    white-space: nowrap;
 
     article {
         margin-bottom: 2rem;
@@ -233,10 +234,6 @@ p {
 
 .studium2 .amazon {
     margin-top: 2.188rem;
-}
-
-.skills {
-    flex: 1;
 }
 
 .grundkenntnisse,
@@ -417,7 +414,7 @@ p {
     #figmalogo {
         position: absolute;
         z-index: 3;
-        left: -4%;
+        left: -0.7rem;
         width: 4.5rem;
         height: 4.5rem;
     }
@@ -425,20 +422,27 @@ p {
         #indesignlogo {
             position: absolute;
             z-index: 2;
-            left: 12%;
-            margin-top: 9%;
+            left: 1.9rem;
+            top: 1.9rem;
             width: 4.5rem;
             height: 4.5rem;
         }
-
+        
             #illustratorlogo {
                 position: absolute;
                 z-index: 1;
-                top: 50%;
-                left: 32%;
+                top: -0.1rem;
+                left: 6rem;
                 width: 4.5rem;
                 height: 4.5rem;
-            }
+            } 
+}
+.greenrouteframes,
+.touristbikeinhalt {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -483,7 +487,23 @@ p {
             max-width: 350px;
         }
 
+        #mockup {
+            max-width: 400px;
+        }
+
+
     }
+
+    .touristbikeinhalt {
+        text-align: left;
+        padding-left: 1.3rem;
+    
+        #touristbiketext {
+            margin: 0;
+            max-width: none;
+        }
+    }
+
     .mockupsgreenroute {
         display: flex;
         flex-wrap: nowrap;
@@ -538,6 +558,59 @@ p {
     .main {
         max-width: 1600px;
         margin: 0 auto;
+    }
+
+    #greenroutetext,
+    #touristbiketext {
+        width: 89%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .mockupsgreenroute {
+        gap: 3rem;
+    }
+
+    .touristbikemockups {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        #mockup,
+        #csscodesnippet,
+        #phpcodesnippet {
+            max-width: 120%;
+            height: auto;
+            display: block;
+        }
+
+        #mockup {
+            max-width: 90%;
+            height: auto;
+        }
+
+        #csscodesnippet {
+            position: absolute;
+            z-index: 2;
+            top: auto;
+            bottom: 0;
+            right: 75%;
+            width: 20rem;
+            border-radius: 6rem;
+        }
+
+        #phpcodesnippet {
+            position: absolute;
+            z-index: 1;
+            top: 34%;
+            left: 60%;
+            bottom: 0;
+            width: 40rem;
+            border-radius: 6rem;
+        }
     }
 }
 

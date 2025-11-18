@@ -67,7 +67,7 @@ nav {
     line-height: 1.0;
 }
 
-.greenrouteheader {
+.greenroutebereich {
     background-color: #4E663B;
     padding: 1.25rem;
     padding-bottom: 0;
@@ -307,14 +307,9 @@ p {
 #maillink,
 #handynummer {
     color: #500711;
-    text-decoration: none;
+    text-decoration: underline;
     white-space: nowrap;
     padding: 10px;
-
-    &:hover {
-        text-decoration: underline;
-        text-decoration-color: #500711;
-    }
 }
 
 #wohnort {
@@ -325,7 +320,7 @@ p {
     color:#500711;
 }
 
-.touristbikeheader {
+.touristbikebereich {
     background-color: #FCDC6B;
 
     #touristbikeheading {
@@ -345,7 +340,7 @@ p {
         }
 }
 
-#touristbikeheading,
+#touristbikebereich,
 #projekt02,
 #touristbiketext {
     color: #474341;
@@ -442,6 +437,9 @@ p {
     padding-right: 1.5rem;
 }
 
+#protolink {
+    color: #3E5530;
+}
 
 @media (max-width: 768px) {
     .inhalt {
@@ -459,7 +457,7 @@ p {
 
     #portfolioheading,
     .greenroute,
-    .touristbikeheader #touristbikeheading {
+    .touristbikebereich #touristbikeheading {
         font-size: 70px;
     }
 
@@ -611,5 +609,6 @@ p {
         }
     }
 }
+
 
 

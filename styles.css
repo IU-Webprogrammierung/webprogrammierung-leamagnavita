@@ -107,8 +107,12 @@ nav ul li a.active1 {
   border-radius: 10px;
 }
 
+.überschriftlebenslauf {
+  color: #500711;
+}
+
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", serif;
   font-size: 1rem;
   font-weight: bold;
   color: #500711;

@@ -80,8 +80,23 @@
         <article class="touristbikemockups">
             <img id="mockup" src="images/Frame 6.png" alt="TouristBike Startscreen" width="720"
                 height="720">
-            <img id="csscodesnippet"  src="images/csscodesnippet.png" alt="button css code snippet">
-            <img id="phpcodesnippet" src="images/phpcodesnippet.png" alt=" Formularübertragung php code snippet">
+                <form class="formulartouristbike">
+                    <p>eBike Bedarf übermitteln</p>
+                    <p>hier kannst du den vorraussichtlichen Bedarf der E-Bikes für eine kommende Woche angeben, damit diese rechtzeitig geliefert werden können.</p>
+                    <hr>
+                    <label for="date">Lieferung für die Woche ab dem</label>
+                    <input type="date" id="date"/>
+                
+                    <label for="checkbox">erwartete Auslastung übernehmen</label>
+                    <input type="checkbox" id="checkbox">
+                    <hr>
+                    <p>ODER</p>
+                    <label fpr="number">manuelle Eingabe</label>
+                    <input type="number" min="5" max="25" step="1" id="number">
+
+                    <button>absenden</button>
+                </form>
+        
         </article>
         
     </section>

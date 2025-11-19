@@ -363,41 +363,10 @@ span {
 }
 
 .touristbikemockups {
-  position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-.touristbikemockups #mockup,
-.touristbikemockups #csscodesnippet,
-.touristbikemockups #phpcodesnippet {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.touristbikemockups #mockup {
-  max-width: 90%;
-  height: auto;
-}
-.touristbikemockups #csscodesnippet {
-  position: absolute;
-  z-index: 2;
-  top: auto;
-  bottom: 0;
-  right: 45%;
-  width: 15rem;
-  border-radius: 6rem;
-}
-.touristbikemockups #phpcodesnippet {
-  position: absolute;
-  z-index: 1;
-  top: 34%;
-  left: 59.5%;
-  bottom: 0;
-  width: 29rem;
-  border-radius: 6rem;
 }
 
 .softwarelogos {

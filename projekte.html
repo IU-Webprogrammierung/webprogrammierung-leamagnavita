@@ -81,20 +81,22 @@
             <img id="mockup" src="images/Frame 6.png" alt="TouristBike Startscreen" width="720"
                 height="720">
                 <form class="formulartouristbike">
-                    <p>eBike Bedarf übermitteln</p>
-                    <p>hier kannst du den vorraussichtlichen Bedarf der E-Bikes für eine kommende Woche angeben, damit diese rechtzeitig geliefert werden können.</p>
+                    <p id="formularüberschrift">eBike Bedarf übermitteln</p>
+                    <p id="formularbeschreibung">hier kannst du den vorraussichtlichen Bedarf der E-Bikes für eine kommende Woche angeben, damit diese rechtzeitig geliefert werden können.</p>
                     <hr>
                     <label for="date">Lieferung für die Woche ab dem</label>
                     <input type="date" id="date"/>
                 
                     <label for="checkbox">erwartete Auslastung übernehmen</label>
                     <input type="checkbox" id="checkbox">
-                    <hr>
-                    <p>ODER</p>
-                    <label fpr="number">manuelle Eingabe</label>
-                    <input type="number" min="5" max="25" step="1" id="number">
+                    
+                    <article class="hide">
+                        <p id="oder">ODER</p>
+                        <label for="number">manuelle Eingabe</label>
+                        <input type="number" min="5" max="25" step="1" id="number">
+                    </article>
 
-                    <button>absenden</button>
+                    <button>absenden <span class="material-symbols-outlined">send</span></button>
                 </form>
         
         </article>

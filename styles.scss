@@ -367,6 +367,83 @@ span {
     width: 100%;
 }
 
+.formulartouristbike {
+    background-color: #FFFDED;
+    border: 3px solid #FCDC6B;
+    border-radius: 10px;
+    max-width: 350px;
+    padding: 10px;
+
+    #formularüberschrift {
+        color: #61432A;
+        font-family: "inter", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+   #formularbeschreibung {
+        font-size: 12px;
+        color: #61432A;
+        font-family: "inter", sans-serif;
+    }
+
+    label {
+        font-size: 12px;
+        color: #61432A;
+        font-family: "inter", sans-serif;
+    }
+
+    #date {
+        appearance: none;
+        background-color: #FCDC6B;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 15px;
+        font-family: "inter", sans-serif;
+        color: #61432A;
+    }
+
+    #checkbox {
+        background-color: #FFFDED;
+        color: #61432A;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    #checkbox:checked ~ .hide {
+            display: none;
+        }
+
+    hr {
+        height: 2px;
+        background-color: #606C38;
+        border: none;
+    }
+
+    #oder {
+        margin-bottom: 15px;
+    }
+
+    button {
+        margin-left: 220px;
+        background-color:#3E5530;
+        border: none;
+        color: #FFFDED;
+        padding: 4px 12px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .material-symbols-outlined {
+            width: 15px;
+            height: 22x;
+            font-size: 20px;
+            color:#FFFDED
+        }
+    }
+}
 
 
 .softwarelogos {

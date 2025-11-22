@@ -367,28 +367,36 @@ span {
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .formulartouristbike {
   background-color: #FFFDED;
   border: 3px solid #FCDC6B;
   border-radius: 10px;
-  max-width: 350px;
+  max-width: 300px;
+  max-height: 206px;
   padding: 10px;
+  position: relative;
+  z-index: 2;
+  top: 145px;
+  right: 340px;
 }
 .formulartouristbike #formularüberschrift {
   color: #61432A;
   font-family: "inter", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
+  margin-top: 0;
 }
 .formulartouristbike #formularbeschreibung {
-  font-size: 12px;
+  font-size: 10px;
   color: #61432A;
   font-family: "inter", sans-serif;
 }
 .formulartouristbike label {
-  font-size: 12px;
+  font-size: 10px;
   color: #61432A;
   font-family: "inter", sans-serif;
 }
@@ -398,29 +406,31 @@ span {
   border: none;
   border-radius: 10px;
   padding: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   font-family: "inter", sans-serif;
+  font-size: 10px;
   color: #61432A;
 }
 .formulartouristbike #checkbox {
   background-color: #FFFDED;
   color: #61432A;
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 .formulartouristbike #checkbox:checked ~ .hide {
   display: none;
 }
 .formulartouristbike hr {
-  height: 2px;
+  height: 1px;
   background-color: #606C38;
   border: none;
 }
 .formulartouristbike #oder {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+  font-size: 10px;
 }
 .formulartouristbike button {
-  margin-left: 220px;
+  margin-left: 210px;
   background-color: #3E5530;
   border: none;
   color: #FFFDED;
@@ -429,11 +439,12 @@ span {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 10px;
 }
 .formulartouristbike button .material-symbols-outlined {
-  width: 15px;
+  width: 10px;
   height: 22x;
-  font-size: 20px;
+  font-size: 15px;
   color: #FFFDED;
 }
 
@@ -498,23 +509,6 @@ span {
     padding: 1rem;
     overflow: hidden;
   }
-  .touristbikemockups #mockup,
-  .touristbikemockups #csscodesnippet,
-  .touristbikemockups #phpcodesnippet {
-    position: static;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 0.5rem 0;
-    border-radius: 1rem;
-  }
-  .touristbikemockups #csscodesnippet,
-  .touristbikemockups #phpcodesnippet {
-    max-width: 350px;
-  }
-  .touristbikemockups #mockup {
-    max-width: 400px;
-  }
   .touristbikeinhalt {
     text-align: left;
     padding-left: 1.3rem;
@@ -577,43 +571,6 @@ span {
   }
   .mockupsgreenroute {
     gap: 3rem;
-  }
-  .touristbikemockups {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .touristbikemockups #mockup,
-  .touristbikemockups #csscodesnippet,
-  .touristbikemockups #phpcodesnippet {
-    max-width: 120%;
-    height: auto;
-    display: block;
-  }
-  .touristbikemockups #mockup {
-    max-width: 90%;
-    height: auto;
-  }
-  .touristbikemockups #csscodesnippet {
-    position: absolute;
-    z-index: 2;
-    top: auto;
-    bottom: 0;
-    right: 75%;
-    width: 20rem;
-    border-radius: 6rem;
-  }
-  .touristbikemockups #phpcodesnippet {
-    position: absolute;
-    z-index: 1;
-    top: 34%;
-    left: 60%;
-    bottom: 0;
-    width: 40rem;
-    border-radius: 6rem;
   }
 }
 

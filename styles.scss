@@ -365,30 +365,38 @@ span {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .formulartouristbike {
     background-color: #FFFDED;
     border: 3px solid #FCDC6B;
     border-radius: 10px;
-    max-width: 350px;
+    max-width: 300px;
+    max-height: 206px;
     padding: 10px;
+    position: relative;
+    z-index: 2;
+    top: 145px;
+    right: 340px;
 
     #formularüberschrift {
         color: #61432A;
         font-family: "inter", sans-serif;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: bold;
+        margin-top: 0;
     }
 
    #formularbeschreibung {
-        font-size: 12px;
+        font-size: 10px;
         color: #61432A;
         font-family: "inter", sans-serif;
     }
 
     label {
-        font-size: 12px;
+        font-size: 10px;
         color: #61432A;
         font-family: "inter", sans-serif;
     }
@@ -399,8 +407,9 @@ span {
         border: none;
         border-radius: 10px;
         padding: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 7px;
         font-family: "inter", sans-serif;
+        font-size: 10px;
         color: #61432A;
     }
 
@@ -408,7 +417,7 @@ span {
         background-color: #FFFDED;
         color: #61432A;
         display: inline-block;
-        margin-bottom: 15px;
+        margin-bottom: 7px;
     }
 
     #checkbox:checked ~ .hide {
@@ -416,17 +425,18 @@ span {
         }
 
     hr {
-        height: 2px;
+        height: 1px;
         background-color: #606C38;
         border: none;
     }
 
     #oder {
-        margin-bottom: 15px;
+        margin-bottom: 7px;
+        font-size: 10px;
     }
 
     button {
-        margin-left: 220px;
+        margin-left: 210px;
         background-color:#3E5530;
         border: none;
         color: #FFFDED;
@@ -435,11 +445,12 @@ span {
         display: flex;
         align-items: center;
         gap: 10px;
+        font-size: 10px;
 
         .material-symbols-outlined {
-            width: 15px;
+            width: 10px;
             height: 22x;
-            font-size: 20px;
+            font-size: 15px;
             color:#FFFDED
         }
     }
@@ -512,28 +523,6 @@ span {
         align-items: center;
         padding: 1rem;
         overflow: hidden;
-    
-        #mockup,
-        #csscodesnippet,
-        #phpcodesnippet {
-            position: static;
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            margin: 0.5rem 0;
-            border-radius: 1rem;
-        }
-
-        #csscodesnippet,
-        #phpcodesnippet {
-            max-width: 350px;
-        }
-
-        #mockup {
-            max-width: 400px;
-        }
-
-
     }
 
     .touristbikeinhalt {
@@ -612,49 +601,8 @@ span {
     .mockupsgreenroute {
         gap: 3rem;
     }
-
-    .touristbikemockups {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        #mockup,
-        #csscodesnippet,
-        #phpcodesnippet {
-            max-width: 120%;
-            height: auto;
-            display: block;
-        }
-
-        #mockup {
-            max-width: 90%;
-            height: auto;
-        }
-
-        #csscodesnippet {
-            position: absolute;
-            z-index: 2;
-            top: auto;
-            bottom: 0;
-            right: 75%;
-            width: 20rem;
-            border-radius: 6rem;
-        }
-
-        #phpcodesnippet {
-            position: absolute;
-            z-index: 1;
-            top: 34%;
-            left: 60%;
-            bottom: 0;
-            width: 40rem;
-            border-radius: 6rem;
-        }
-    }
 }
+
 
 
 

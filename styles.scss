@@ -342,6 +342,14 @@ span {
         }
 }
 
+.touristbikesection {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background-color: #FFEFB3;
+}
+
+
 #touristbikebereich,
 #projekt02,
 #touristbiketext {
@@ -355,48 +363,50 @@ span {
     line-height: 1.5;
 }
 
-.touristbikeinhalt,
-.touristbikemockups {
-    background-color: #FFEFB3;
+#mockup {
+    width: 720px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .touristbikemockups {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto; 
+    transform-origin: top center;
 }
 
 .formulartouristbike {
     background-color: #FFFDED;
     border: 3px solid #FCDC6B;
     border-radius: 10px;
-    max-width: 300px;
-    max-height: 206px;
+    width: 257px;
+    height: 193px;
     padding: 10px;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    top: 145px;
-    right: 340px;
+    top: 54.4%;
+    right: 6%;
+   
 
     #formularüberschrift {
         color: #61432A;
         font-family: "inter", sans-serif;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: bold;
         margin-top: 0;
     }
 
    #formularbeschreibung {
-        font-size: 10px;
+        font-size: 8px;
         color: #61432A;
         font-family: "inter", sans-serif;
     }
 
     label {
-        font-size: 10px;
+        font-size: 8px;
         color: #61432A;
         font-family: "inter", sans-serif;
     }
@@ -409,7 +419,7 @@ span {
         padding: 5px;
         margin-bottom: 7px;
         font-family: "inter", sans-serif;
-        font-size: 10px;
+        font-size: 8px;
         color: #61432A;
     }
 
@@ -431,12 +441,13 @@ span {
     }
 
     #oder {
-        margin-bottom: 7px;
+        margin-bottom: 0;
         font-size: 10px;
+        margin-bottom: 0;
     }
-
+    
     button {
-        margin-left: 210px;
+        margin-left: 175px;
         background-color:#3E5530;
         border: none;
         color: #FFFDED;
@@ -445,17 +456,16 @@ span {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 10px;
+        font-size: 8px;
 
         .material-symbols-outlined {
-            width: 10px;
-            height: 22x;
+            width: 8px;
+            height: 15px;
             font-size: 15px;
             color:#FFFDED
         }
     }
 }
-
 
 .softwarelogos {
     position: relative;
@@ -519,11 +529,11 @@ span {
     }
 
     .touristbikemockups {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        overflow: hidden;
+        width: 600px;
     }
+
+    
+}
 
     .touristbikeinhalt {
         text-align: left;
@@ -544,7 +554,127 @@ span {
             flex: 0 0 auto;
         }
     }
+
+
+@media (max-width: 480px) {
+    .touristbikemockups {
+        width: 300px;
+    }
+
+    .formulartouristbike {
+    border: 1px solid #FCDC6B;
+    border-radius: 10px;
+    width: 100px;
+    height: 76px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 54%;
+    right: 5.2%;
+
+    
+    .hide #date {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    #formularüberschrift {
+        color: #61432A;
+        font-family: "inter", sans-serif;
+        font-size: 5px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+
+   #formularbeschreibung {
+        font-size: 3px;
+        color: #61432A;
+        font-family: "inter", sans-serif;
+    }
+
+    label {
+        font-size: 3px;
+        color: #61432A;
+        font-family: "inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+
+    input {
+        line-height: 0;
+    }
+
+    #date {
+        appearance: none;
+        background-color: #FCDC6B;
+        border: none;
+        border-radius: 10px;
+        padding: 0.5px;
+        font-family: "inter", sans-serif;
+        font-size: 3px;
+        color: #61432A;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    #checkbox {
+        background-color: #FFFDED;
+        color: #61432A;
+        display: inline-block;
+        margin: 0;
+        width: 4px;
+        height: 4px;
+    }
+
+    #checkbox:checked ~ .hide {
+            display: none;
+        }
+
+    hr {
+        height: 0.5px;
+        background-color: #606C38;
+        border: none;
+        margin: 0;
+    }
+
+    #oder {
+        font-size: 3px;
+        line-height: 1;
+        margin: 0 0 4px 0;
+    }
+
+    #number {
+        width: 1px;
+        height: 1px;  
+    }
+
+    button {
+        margin-left: 74px;
+        margin-top: -11px;
+        background-color:#3E5530;
+        border: none;
+        color: #FFFDED;
+        padding: 2px 4px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 3px;
+
+        .material-symbols-outlined {
+            height: 6px;
+            font-size: 6px;
+            color:#FFFDED
+        }
+    }
 }
+
+}
+
+
 
 @media (min-width: 768px) {
 
@@ -602,6 +732,10 @@ span {
         gap: 3rem;
     }
 }
+
+
+
+
 
 
 

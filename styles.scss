@@ -467,11 +467,15 @@ span {
     }
     #buchung {          /*Buchungsbestätigung mit JS*/
         display: none;
+        margin-top: 0rem;
     }
     #buchung.sichtbar {
         display: block;
     }
+}
 
+.versteckt {
+    display: none;
 }
 
 .softwarelogos {

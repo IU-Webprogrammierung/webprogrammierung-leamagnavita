@@ -458,9 +458,14 @@ span {
 }
 .formulartouristbike #buchung { /*Buchungsbestätigung mit JS*/
   display: none;
+  margin-top: 0rem;
 }
 .formulartouristbike #buchung.sichtbar {
   display: block;
+}
+
+.versteckt {
+  display: none;
 }
 
 .softwarelogos {

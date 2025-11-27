@@ -465,6 +465,13 @@ span {
             color:#FFFDED
         }
     }
+    #buchung {          /*Buchungsbestätigung mit JS*/
+        display: none;
+    }
+    #buchung.sichtbar {
+        display: block;
+    }
+
 }
 
 .softwarelogos {
@@ -508,6 +515,7 @@ span {
     color: #3E5530;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .inhalt {
         flex-direction: column;
@@ -670,8 +678,8 @@ span {
             color:#FFFDED
         }
     }
-}
 
+    }
 }
 
 

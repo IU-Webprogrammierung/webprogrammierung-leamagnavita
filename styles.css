@@ -456,6 +456,12 @@ span {
   font-size: 15px;
   color: #FFFDED;
 }
+.formulartouristbike #buchung { /*Buchungsbestätigung mit JS*/
+  display: none;
+}
+.formulartouristbike #buchung.sichtbar {
+  display: block;
+}
 
 .softwarelogos {
   position: relative;
@@ -496,6 +502,7 @@ span {
   color: #3E5530;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .inhalt {
     flex-direction: column;

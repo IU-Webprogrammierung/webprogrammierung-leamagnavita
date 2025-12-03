@@ -29,7 +29,8 @@ neuButton.addEventListener("click", function () {
     buchungElement.classList.remove("sichtbar");
 
     let neuButton = document.getElementById("neu");
-    neuButton.classList.remove("sichtbar");});
+    neuButton.classList.remove("sichtbar");
+    document.forms[0].reset();});
 
 
 

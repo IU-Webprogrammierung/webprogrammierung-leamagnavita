@@ -465,17 +465,23 @@ span {
             color:#FFFDED
         }
     }
-    #buchung {          /*Buchungsbestätigung mit JS*/
+/*Buchungsbestätigung mit JS*/
+    .versteckt {        
+        display: none;
+    }
+    .buchungsbestätigung {          
         display: none;
         margin-top: 0rem;
     }
-    #buchung.sichtbar {
+    .buchungsbestätigung.sichtbar {
         display: block;
     }
-}
-
-.versteckt {
-    display: none;
+    #neu {
+        display: none;
+    }
+    #neu.sichtbar {
+        display: block;
+    }
 }
 
 .softwarelogos {

@@ -456,16 +456,24 @@ span {
   font-size: 15px;
   color: #FFFDED;
 }
-.formulartouristbike #buchung { /*Buchungsbestätigung mit JS*/
+.formulartouristbike {
+  /*Buchungsbestätigung mit JS*/
+}
+.formulartouristbike .versteckt {
+  display: none;
+}
+.formulartouristbike .buchungsbestätigung {
   display: none;
   margin-top: 0rem;
 }
-.formulartouristbike #buchung.sichtbar {
+.formulartouristbike .buchungsbestätigung.sichtbar {
   display: block;
 }
-
-.versteckt {
+.formulartouristbike #neu {
   display: none;
+}
+.formulartouristbike #neu.sichtbar {
+  display: block;
 }
 
 .softwarelogos {

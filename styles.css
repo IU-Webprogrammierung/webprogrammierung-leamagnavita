@@ -464,13 +464,23 @@ span {
 }
 .formulartouristbike .buchungsbestätigung {
   display: none;
-  margin-top: 0rem;
+  margin-top: -1rem;
 }
 .formulartouristbike .buchungsbestätigung.sichtbar {
   display: block;
 }
+.formulartouristbike #buchungicon {
+  width: 80px;
+  height: 130px;
+  margin: 0;
+  margin-left: 5rem;
+}
 .formulartouristbike #neu {
   display: none;
+  margin: 0;
+  margin-left: 8rem;
+  width: 8rem;
+  height: 1.5rem;
 }
 .formulartouristbike #neu.sichtbar {
   display: block;

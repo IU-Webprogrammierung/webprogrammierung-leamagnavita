@@ -9,8 +9,12 @@ document.forms[0].addEventListener("submit", function (event) {
         //Formularinhalt für Buchungsbestätigung ausblenden
         let verstecktElement = document.querySelector(".formularinhalt");
         verstecktElement.classList.add("versteckt");
+        //Buchungsbestätigung einbelenden
         let buchungElement = document.querySelector(".buchungsbestätigung");
         buchungElement.classList.add("sichtbar");
+        //Buchungs-icon einblenden
+        let buchungIcon = document.getElementById("buchungicon");
+        buchungIcon.classList.add("sichtbar");
         //Button für Wiederherstellung des Formulars einblenden
         let neuButton = document.getElementById("neu");
         neuButton.classList.add("sichtbar");

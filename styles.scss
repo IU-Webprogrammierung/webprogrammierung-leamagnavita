@@ -471,13 +471,23 @@ span {
     }
     .buchungsbestätigung {          
         display: none;
-        margin-top: 0rem;
+        margin-top: -1rem;
     }
     .buchungsbestätigung.sichtbar {
         display: block;
     }
+    #buchungicon {
+        width: 80px;
+        height: 130px;
+        margin: 0;
+        margin-left: 5rem;
+    }
     #neu {
         display: none;
+        margin: 0;
+        margin-left: 8rem;
+        width: 8rem;
+        height: 1.5rem;
     }
     #neu.sichtbar {
         display: block;
@@ -549,8 +559,6 @@ span {
     .touristbikemockups {
         width: 600px;
     }
-
-    
 }
 
     .touristbikeinhalt {
@@ -580,115 +588,113 @@ span {
     }
 
     .formulartouristbike {
-    border: 1px solid #FCDC6B;
-    border-radius: 10px;
-    width: 100px;
-    height: 76px;
-    padding: 10px;
-    position: absolute;
-    z-index: 2;
-    top: 54%;
-    right: 5.2%;
-
-    
-    .hide #date {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    #formularüberschrift {
-        color: #61432A;
-        font-family: "inter", sans-serif;
-        font-size: 5px;
-        font-weight: bold;
-        margin-top: -5px;
-    }
-
-   #formularbeschreibung {
-        font-size: 3px;
-        color: #61432A;
-        font-family: "inter", sans-serif;
-    }
-
-    label {
-        font-size: 3px;
-        color: #61432A;
-        font-family: "inter", sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 0;
-    }
-
-    input {
-        line-height: 0;
-    }
-
-    #date {
-        appearance: none;
-        background-color: #FCDC6B;
-        border: none;
+        border: 1px solid #FCDC6B;
         border-radius: 10px;
-        padding: 0.5px;
-        font-family: "inter", sans-serif;
-        font-size: 3px;
-        color: #61432A;
-        margin: 0;
-        padding: 0;
-        
-    }
+        width: 100px;
+        height: 76px;
+        padding: 10px;
+        position: absolute;
+        z-index: 2;
+        top: 54%;
+        right: 5.2%;
 
-    #checkbox {
-        background-color: #FFFDED;
-        color: #61432A;
-        display: inline-block;
-        margin: 0;
-        width: 4px;
-        height: 4px;
-    }
+        .hide #date {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
 
-    #checkbox:checked ~ .hide {
+        #formularüberschrift {
+            color: #61432A;
+            font-family: "inter", sans-serif;
+            font-size: 5px;
+            font-weight: bold;
+            margin-top: -5px;
+        }
+
+        #formularbeschreibung {
+            font-size: 3px;
+            color: #61432A;
+            font-family: "inter", sans-serif;
+        }
+
+        label {
+            font-size: 3px;
+            color: #61432A;
+            font-family: "inter", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        input {
+            line-height: 0;
+        }
+
+        #date {
+            appearance: none;
+            background-color: #FCDC6B;
+            border: none;
+            border-radius: 10px;
+            padding: 0.5px;
+            font-family: "inter", sans-serif;
+            font-size: 3px;
+            color: #61432A;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #checkbox {
+            background-color: #FFFDED;
+            color: #61432A;
+            display: inline-block;
+            margin: 0;
+            width: 4px;
+            height: 4px;
+        }
+
+        #checkbox:checked~.hide {
             display: none;
         }
 
-    hr {
-        height: 0.5px;
-        background-color: #606C38;
-        border: none;
-        margin: 0;
-    }
-
-    #oder {
-        font-size: 3px;
-        line-height: 1;
-        margin: 0 0 4px 0;
-    }
-
-    #number {
-        width: 1px;
-        height: 1px;  
-    }
-
-    button {
-        margin-left: 74px;
-        margin-top: -11px;
-        background-color:#3E5530;
-        border: none;
-        color: #FFFDED;
-        padding: 2px 4px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        font-size: 3px;
-
-        .material-symbols-outlined {
-            height: 6px;
-            font-size: 6px;
-            color:#FFFDED
+        hr {
+            height: 0.5px;
+            background-color: #606C38;
+            border: none;
+            margin: 0;
         }
-    }
 
+        #oder {
+            font-size: 3px;
+            line-height: 1;
+            margin: 0 0 4px 0;
+        }
+
+        #number {
+            width: 1px;
+            height: 1px;
+        }
+
+        button {
+            margin-left: 74px;
+            margin-top: -11px;
+            background-color: #3E5530;
+            border: none;
+            color: #FFFDED;
+            padding: 2px 4px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 3px;
+
+            .material-symbols-outlined {
+                height: 6px;
+                font-size: 6px;
+                color: #FFFDED
+            }
+        }
     }
 }
 

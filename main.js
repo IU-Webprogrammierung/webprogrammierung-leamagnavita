@@ -1,3 +1,10 @@
+//Text auf Startseite automatisch eingeklappt unter 768px
+let closeAnschreiben = document.getElementById("text");
+let bildschirmBreite = window.innerWidth;
+if (bildschirmBreite < 768) {
+    closeAnschreiben.removeAttribute("open");
+}
+
 //hier wird das Absenden des Formulars abgefangen, um eine Buchungsbestätigung zu simulieren, ohne die Seite neu zu laden
 document.forms[0].addEventListener("submit", function (event) {
     event.preventDefault();

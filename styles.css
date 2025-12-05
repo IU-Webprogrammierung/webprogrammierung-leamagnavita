@@ -179,10 +179,10 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 6.25rem;
+  gap: 3rem;
   max-width: 68.75rem;
   margin: 0 auto;
-  padding: 0 5.938rem;
+  padding-inline: clamp(1rem, 4vw, 2rem);
   padding-top: 3rem;
 }
 
@@ -190,7 +190,9 @@ p {
   height: 43rem;
   margin-top: 3.5rem;
   display: block;
-  margin: 3.5rem auto 0 -85px;
+  margin: 3.5rem auto;
+  margin-left: 0;
+  transform: translateX(-10px);
   width: 4rem;
   height: auto;
   max-height: 100%;
@@ -202,7 +204,6 @@ p {
   align-items: flex-start;
   gap: 1.5rem;
   flex-direction: row;
-  white-space: nowrap;
 }
 .lebenslauf article {
   margin-bottom: 2rem;
@@ -576,7 +577,8 @@ button .material-symbols-outlined {
     padding-left: 0;
   }
   .skills {
-    margin-top: -35%;
+    margin-top: -10%;
+    margin-left: 30px;
   }
   #portfolioheading,
   .greenroute,
@@ -601,25 +603,23 @@ button .material-symbols-outlined {
   .touristbikemockups {
     width: 650px;
   }
+  .touristbikeinhalt {
+    text-align: left;
+    padding-left: 1.3rem;
+  }
+  .touristbikeinhalt #touristbiketext {
+    margin: 0;
+    max-width: none;
+  }
+  .mockupsgreenroute {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .mockupsgreenroute img {
+    flex: 0 0 auto;
+  }
 }
-.touristbikeinhalt {
-  text-align: left;
-  padding-left: 1.3rem;
-}
-.touristbikeinhalt #touristbiketext {
-  margin: 0;
-  max-width: none;
-}
-
-.mockupsgreenroute {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: auto;
-}
-.mockupsgreenroute img {
-  flex: 0 0 auto;
-}
-
 @media (max-width: 480px) {
   .touristbikemockups {
     position: relative;
@@ -686,9 +686,6 @@ button .material-symbols-outlined {
   }
 }
 @media (min-width: 768px) {
-  .anschreiben {
-    pointer-events: none;
-  }
   .anschreiben [open] {
     overflow: visible;
   }
@@ -699,9 +696,17 @@ button .material-symbols-outlined {
     display: block;
   }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .grundkenntnisse,
+  .kontakt {
+    padding-bottom: 4.813rem;
+    margin: 0;
+    padding-left: 0;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1599px) {
   .inhalt {
-    gap: 25rem;
+    gap: clamp(3rem, 10vw, 10rem);
   }
   #greenroutetext,
   #touristbiketext {

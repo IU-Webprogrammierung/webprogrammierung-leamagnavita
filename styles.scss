@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Navigation und Header */
 .header {
     background-color: #FB96BD;
     padding: 1.25rem;
@@ -44,15 +45,15 @@ nav {
                 font-size: 14px;
                 padding: 0.75rem 1rem;
                 text-decoration: none;
-                border-radius: 50px; 
+                border-radius: 50px;
 
-                    &.active {
-                        background-color: #ffc95f;
-                    }
+                &.active {
+                    background-color: #ffc95f;
+                }
 
-                    &.active1 {
-                        background-color: #FB96BD;
-                    }
+                &.active1 {
+                    background-color: #FB96BD;
+                }
             }
         }
     }
@@ -67,55 +68,7 @@ nav {
     line-height: 1.0;
 }
 
-.greenroutebereich {
-    background-color: #4E663B;
-    padding: 1.25rem;
-    padding-bottom: 0;
-}
-
-#projekt01 {
-    color: #F5F5F5;
-    font-size: 1rem;
-    text-align: center;
-    position: relative;
-    top: 3.125rem;
-}
-
-.greenroute {
-    color: #FB96BD;
-    font-size: 7.5rem;
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 0;
-}
-
-.greenrouteframes {
-    margin: 0 auto;
-    padding: 3.125rem;
-    background-color: #B1B37E;
-
-    p {
-        font-family: "Poppins", sans-serif;
-        line-height: 1.5;
-        color: #4E663B;
-    }
-}
-
-.mockupsgreenroute {
-    display: flex;
-    padding: 3.125rem 3.125rem;
-    gap: 1rem;
-    justify-content: center;
-    margin: 0;
-
-    img {
-        border-radius: 10px;
-    }
-}
-.überschriftlebenslauf {
-    color: #500711;
-}
-
+/* allgemein */
 h3 {
     font-family: "Poppins", serif;
     font-size: 1rem;
@@ -130,56 +83,53 @@ p {
     color: #500711
 }
 
-.anschreiben,
-#anschreiben1 {
-    position: relative;
-    z-index: 2;
-}
-
-#ausklappen {
-    padding-top: 1rem;
-    font-family: "Poppins", sans-serif;
-    color: #500711;
-    font-size: 0.875rem;
-}
-
-.hi {
-    position: relative;
-    z-index: 3;
-    top: -3%;
-    margin: 0;
-    font-family: "Playfair Display", serif;
-    font-size: 2rem;
-    font-weight: normal;
-    color: #500711;
-    margin-bottom: 0;
-}
-
-#scribblehi {
-    position: absolute;
-    z-index: 1;
-    top: -65%;
-    left: -90%;
-    width: 300%;
-}
-
-.hi-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.beschreibung {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.875rem;
-    font-weight: normal;
-    color: #594d4e;
-}
-
+/* Anschreiben */
 .anschreiben {
     background-color: #ffc95f;
     padding: 3.125rem 6.25rem;
+
+    .hi-wrapper {
+        position: relative;
+        display: inline-block;
+
+        .hi {
+            position: relative;
+            z-index: 3;
+            top: -3%;
+            margin: 0;
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            font-weight: normal;
+            color: #500711;
+            margin-bottom: 0;
+        }
+
+        #scribblehi {
+            position: absolute;
+            z-index: 1;
+            top: -65%;
+            left: -90%;
+            width: 300%;
+        }
+    }
+
+    #text {
+
+        #ausklappen {
+            padding-top: 1rem;
+            font-family: "Poppins", sans-serif;
+            color: #500711;
+            font-size: 0.875rem;
+        }
+
+        #anschreiben1 {
+            position: relative;
+            z-index: 2;
+        }
+    }
 }
 
+/* Lebenslauf-Bereich */
 .inhalt {
     display: flex;
     justify-content: space-between;
@@ -189,344 +139,68 @@ p {
     margin: 0 auto;
     padding-inline: clamp(1rem, 4vw, 2rem);
     padding-top: 3rem;
-    
-}
 
-#lebenslaufstrahl {
-    height: 43rem;
-    margin-top: 3.5rem;
-    display: block;
-    margin: 3.5rem auto;
-    margin-left: 0;
-    transform: translateX(-10px);
-    width: 4rem;
-    height: auto;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.lebenslauf {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex-direction: row;
-
-    article {
-        margin-bottom: 2rem;
-    }
-}
-
-.studium2,
-.studium1,
-.amazon,
-.fachabitur,
-.hundekindergarten,
-.mömax {
-    margin-bottom: 2.188rem;
-
-    h3,
-    p {
-        margin: 0 auto;
-        margin-bottom: 0.188rem;
-    }
-}
-
-span {
-    display: block;
-}
-
-.studium2 .amazon {
-    margin-top: 2.188rem;
-}
-
-.grundkenntnisse,
-.kontakt {
-    padding-bottom: 4.813rem;
-    margin: 0;
-    padding-left: 5rem;
-}
-
-.meinefähigkeiten {
-    padding-bottom: 4.813rem;
-    margin: 0;
-}
-
-.grundkenntnisse {
-    padding-top: 9rem;
-}
-
-.softwareskills {
-    margin-bottom: 0;
-}
-
-.skillsliste1,
-.skillsliste2 {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 0.625rem;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 0.625rem;
-}
-
-.kreativ,
-.empathisch,
-.selbstständig,
-.teamfähig,
-.lernbereit {
-    background-color: #ED9BBD;
-    border-radius: 50px;
-    padding: 0.438rem;
-    width: 5.938rem;
-    text-align: center;
-    font-family: "poppins", sans-serif;
-    font-size: 14px;
-}
-
-.kreativ {
-    width: 3.75rem;
-}
-
-.kontaktliste {
-    display: flex;
-    flex-direction: column;
-}
-
-.kontaktliste .email,
-.handy,
-.wohnort {
-    display: flex;
-    align-items: center;
-    font-family: "poppins", sans-serif;
-    font-size: 14px;
-
-    li {
-        margin-right: 0.625rem;
-    }
-}
-
-#maillink,
-#handynummer {
-    color: #500711;
-    text-decoration: underline;
-    white-space: nowrap;
-    padding: 10px;
-}
-
-#wohnort {
-    padding-left: 10px;
-}
-
-.material-symbols-outlined {
-    color:#500711;
-}
-
-.touristbikebereich {
-    background-color: #FCDC6B;
-
-    #touristbikeheading {
-        font-family: "Inter", sans-serif;
-        font-size: 7rem;
-        text-align: center;
-        margin-bottom: 0;
-        color: #474341;
-    }
-    
-        #projekt02 {
-            text-align: center;
-            padding-top: 1.25rem;
-            margin-top: 0;
-            color: #474341;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-}
-
-.touristbikesection {
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    background-color: #FFEFB3;
-}
-
-
-#touristbikebereich,
-#projekt02,
-#touristbiketext {
-    color: #474341;
-  }
-
-.touristbikeinhalt #touristbiketext {
-    margin: 0 auto;
-    padding: 3.125rem;
-    font-family: "Inter", sans-serif;
-    line-height: 1.5;
-}
-
-#mockup {
-    width: 720px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.touristbikemockups {
-    position: relative;
-    display: block; 
-    width: fit-content; 
-    margin: 0 auto; 
-    transform-origin: top center;
-}
-
-.touristbikemockups {
-    position: relative;
-     width: fit-content;
-    margin: 0 auto;
-    max-width: 720px;  
-    
-}
-
-#mockup {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.formular {
-    position: absolute;
-    top: 100%;      
-    left: 30%;      
-    transform: translate(-50%, -50%);
-    width: 52%;     
-    pointer-events: none; 
-}
-
-
-.position {
-    position: relative;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.formulartouristbike {
-    position: absolute;
-    top: 54%;
-    right: 6%;
-    z-index: 10;
-    background-color: #FFFDED;
-    border: 3px solid #FCDC6B;
-    border-radius: 10px;
-    width: 257px;
-    height: 193px;
-    padding: 10px;
-}
-   
-    #formularüberschrift {
-        color: #61432A;
-        font-family: "inter", sans-serif;
-        font-size: 8px;
-        font-weight: bold;
-        margin-top: 0;
-    }
-
-   #formularbeschreibung {
-        font-size: 8px;
-        color: #61432A;
-        font-family: "inter", sans-serif;
-    }
-
-    label {
-        font-size: 8px;
-        color: #61432A;
-        font-family: "inter", sans-serif;
-    }
-
-    #date {
-        appearance: none;
-        background-color: #FCDC6B;
-        border: none;
-        border-radius: 10px;
-        padding: 5px;
-        margin-bottom: 7px;
-        font-family: "inter", sans-serif;
-        font-size: 8px;
-        color: #61432A;
-    }
-
-    #checkbox {
-        background-color: #FFFDED;
-        color: #61432A;
-        display: inline-block;
-        margin-bottom: 7px;
-    }
-
-    #checkbox:checked ~ .hide {
-            display: none;
-        }
-
-    hr {
-        height: 1px;
-        background-color: #606C38;
-        border: none;
-    }
-
-    #oder {
-        margin-bottom: 0;
-        font-size: 10px;
-        margin-bottom: 0;
-    }
-    
-    button {
-        margin-left: 175px;
-        background-color:#3E5530;
-        border: none;
-        color: #FFFDED;
-        padding: 4px 12px;
-        border-radius: 10px;
+    .lebenslauf {
         display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 8px;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex-direction: row;
 
-        .material-symbols-outlined {
-            width: 8px;
-            height: 15px;
-            font-size: 15px;
-            color:#FFFDED
+        #lebenslaufstrahl {
+            height: 43rem;
+            display: block;
+            margin: 3.5rem auto;
+            margin-left: 0;
+            transform: translateX(-10px);
+            width: 4rem;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .lebenslaufcontent {
+
+            article {
+                margin-bottom: 2rem;
+            }
+
+            .überschriftlebenslauf {
+                color: #500711;
+            }
+
+            .studium2,
+            .studium1,
+            .amazon,
+            .fachabitur,
+            .hundekindergarten,
+            .mömax {
+                margin-bottom: 2.188rem;
+
+                h3,
+                p {
+                    margin: 0 auto;
+                    margin-bottom: 0.188rem;
+                }
+            }
+
+            .studium2 .amazon {
+                margin-top: 2.188rem;
+            }
+
+            span {
+                display: block;
+            }
         }
     }
-/*Buchungsbestätigung mit JS*/
-    .versteckt {        
-        display: none;
-    }
-    .buchungsbestätigung {          
-        display: none;
-        margin-top: -1rem;
-    }
-    .buchungsbestätigung.sichtbar {
-        display: block;
-    }
-    #buchungicon {
-        width: 80px;
-        height: 130px;
-        margin: 0;
-        margin-left: 5rem;
-    }
-    #neu {
-        display: none;
-        margin: 0;
-        margin-left: 8rem;
-        width: 8rem;
-        height: 1.5rem;
-    }
-    #neu.sichtbar {
-        display: block;
+}
+
+.skills {
+
+    .softwareskills {
+        margin-bottom: 0;
     }
 
-
-.softwarelogos {
+    .softwarelogos {
     position: relative;
 
     #figmalogo {
@@ -554,20 +228,413 @@ span {
                 width: 4.5rem;
                 height: 4.5rem;
             } 
+    }
+
+    .grundkenntnisse,
+    .kontakt {
+        padding-bottom: 4.813rem;
+        margin: 0;
+        padding-left: 5rem;
+    }
+
+    .meinefähigkeiten {
+        padding-bottom: 4.813rem;
+        margin: 0;
+    }
+
+    .grundkenntnisse {
+        padding-top: 9rem;
+    }
+
+    .skillsliste1,
+    .skillsliste2 {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 0.625rem;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 0.625rem;
+    }
+
+    .kreativ,
+    .empathisch,
+    .selbstständig,
+    .teamfähig,
+    .lernbereit {
+        background-color: #ED9BBD;
+        border-radius: 50px;
+        padding: 0.438rem;
+        width: 5.938rem;
+        text-align: center;
+        font-family: "poppins", sans-serif;
+        font-size: 14px;
+    }
+
+    .kreativ {
+        width: 3.75rem;
+    }
+
+    .kontaktliste {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kontaktliste .email,
+    .handy,
+    .wohnort {
+        display: flex;
+        align-items: center;
+        font-family: "poppins", sans-serif;
+        font-size: 14px;
+
+        li {
+            margin-right: 0.625rem;
+        }
+    }
+
+    #maillink,
+    #handynummer {
+        color: #500711;
+        text-decoration: underline;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    #wohnort {
+        padding-left: 10px;
+    }
+
+    .material-symbols-outlined {
+        color: #500711;
+    }
+
+    .überschriftlebenslauf {
+        color: #500711;
+    }
 }
-.greenrouteframes,
-.touristbike {
+
+/* Projekt Greenroute */
+.greenroutebereich {
+    background-color: #4E663B;
+    padding: 1.25rem;
+    padding-bottom: 0;
+
+    #projekt01 {
+        color: #F5F5F5;
+        font-size: 1rem;
+        text-align: center;
+        position: relative;
+        top: 3.125rem;
+    }
+
+    .greenroute {
+        color: #FB96BD;
+        font-size: 7.5rem;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+}
+
+.greenrouteframes {
+    margin: 0 auto;
+    padding: 3.125rem;
+    background-color: #B1B37E;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+
+    p {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.5;
+        color: #4E663B;
+    }
+
+    #protolink {
+    color: #3E5530;
+    }
 }
 
-#protolink {
-    color: #3E5530;
+.mockupsgreenroute {
+    display: flex;
+    padding: 3.125rem 3.125rem;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+/* Projekt TouristBike */
+.touristbikesection {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background-color: #FFEFB3;
+
+    .touristbikebereich {
+        background-color: #FCDC6B;
+
+        #touristbikeheading {
+            font-family: "Inter", sans-serif;
+            font-size: 7rem;
+            text-align: center;
+            margin-bottom: 0;
+            color: #474341;
+        }
+    
+        #projekt02 {
+            text-align: center;
+            padding-top: 1.25rem;
+            margin-top: 0;
+            color: #474341;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    .touristbikeinhalt {
+
+        #touristbiketext {
+            margin: 0 auto;
+            padding: 3.125rem;
+            font-family: "Inter", sans-serif;
+            line-height: 1.5;
+            color: #474341;
+        }
+    }
+
+.touristbikemockups {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 720px;
+    transform-origin: top center;
+
+    #mockup {
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+        display: block;
+    }
+
+    .position {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+
+        .formulartouristbike {
+            position: absolute;
+            top: 54%;
+            right: 6%;
+            z-index: 10;
+            background-color: #FFFDED;
+            border: 3px solid #FCDC6B;
+            border-radius: 10px;
+            width: 257px;
+            height: 193px;
+            padding: 10px;
+
+                #formularüberschrift {
+                    color: #61432A;
+                    font-family: "inter", sans-serif;
+                    font-size: 8px;
+                    font-weight: bold;
+                    margin-top: 0;
+                }
+
+                #formularbeschreibung {
+                    font-size: 8px;
+                    color: #61432A;
+                    font-family: "inter", sans-serif;
+                }
+
+                label {
+                    font-size: 8px;
+                    color: #61432A;
+                    font-family: "inter", sans-serif;
+                }
+
+                #date {
+                    appearance: none;
+                    background-color: #FCDC6B;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 5px;
+                    margin-bottom: 7px;
+                    font-family: "inter", sans-serif;
+                    font-size: 8px;
+                    color: #61432A;
+                }
+
+                #checkbox {
+                    background-color: #FFFDED;
+                    color: #61432A;
+                    display: inline-block;
+                    margin-bottom: 7px;
+
+                    &:checked ~ .hide {
+                        display: none;
+                    }
+                }
+
+                hr {
+                    height: 1px;
+                    background-color: #606C38;
+                    border: none;
+                }
+
+                #oder {
+                    margin-bottom: 0;
+                    font-size: 10px;
+                    margin-bottom: 0;
+                }
+                
+                button {
+                    margin-left: 175px;
+                    background-color:#3E5530;
+                    border: none;
+                    color: #FFFDED;
+                    padding: 4px 12px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 8px;
+                    
+                    .material-symbols-outlined {
+                        width: 8px;
+                        height: 15px;
+                        font-size: 15px;
+                        color:#FFFDED
+                    }
+                }
+
+                /*Buchungsbestätigung mit JS*/
+                .versteckt {        
+                    display: none;
+                }
+
+                .buchungsbestätigung {          
+                    display: none;
+                    margin-top: -1rem;
+                
+
+                    &.sichtbar {
+                        display: block;
+                    }
+                }
+
+                #buchungicon {
+                    width: 80px;
+                    height: 130px;
+                    margin: 0;
+                    margin-left: 5rem;
+                }
+
+                #neu {
+                    display: none;
+                    margin: 0;
+                    margin-left: 8rem;
+                    width: 8rem;
+                    height: 1.5rem;
+                
+
+                    &.sichtbar {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }      
 }
 
 /* Media Queries */
+@media (max-width: 480px) {
+
+    .touristbikemockups {
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    #mockup {
+        height: auto;
+    }
+
+    .formulartouristbike {
+        position: absolute;
+        z-index: 10;
+        top: 54%;
+        left: 74%;
+        transform: translateX(-50%) scale(0.48);
+        transform-origin: top center;
+        width: 275px;
+        height: 210px;
+    }
+
+    #formularüberschrift {
+        font-size: 9px;
+        margin-bottom: 4px;
+    }
+
+    #formularbeschreibung {
+        font-size: 9px;
+        line-height: 1.25;
+        margin-bottom: 6px;
+    }
+
+    .formulartouristbike label {
+        font-size: 9px;
+    }
+
+    .formulartouristbike input[type="date"] {
+        font-size: 9px;
+        padding: 4px 5px;
+        width: 90px;
+    }
+
+    .formulartouristbike input[type="number"] {
+        font-size: 9px;
+        padding: 4px 5px;
+        width: 30px;
+    }
+
+    #checkbox {
+        transform: scale(0.9);
+        margin-bottom: 6px;
+    }
+
+
+    #oder {
+        font-size: 9px;
+        margin: 4px 0;
+    }
+
+    .formulartouristbike button {
+        font-size: 9px;
+        padding: 4px 10px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-left: 200px;
+        margin-top: 20px;
+
+    }
+
+    .material-symbols-outlined {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 768px) {
     .inhalt {
         flex-direction: column;
@@ -597,21 +664,23 @@ span {
 
     .formulartouristbike {
         position: absolute;
-        top: 70%;            
-        left: 75%;           
+        top: 70%;
+        left: 75%;
         transform: translate(-50%, -50%);
         z-index: 10;
-        width: 250px;        
+        width: 250px;
         height: auto;
         padding: 8px;
     }
+
     .touristbikemockups {
         width: 650px;
     }
-        .touristbikeinhalt {
+
+    .touristbikeinhalt {
         text-align: left;
-        padding-left: 1.3rem;
-    
+        padding-left: 0;
+
         #touristbiketext {
             margin: 0;
             max-width: none;
@@ -629,90 +698,9 @@ span {
     }
 }
 
-
-@media (max-width: 480px) {
-
-.touristbikemockups {
-        position: relative;
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-
-    #mockup {
-        width: 100%;
-        height: auto;
-    }
-
-    .formulartouristbike {
-        position: absolute;
-        z-index: 10;
-        top: 54%;
-        left: 74%;
-        transform: translateX(-50%) scale(0.48);
-        transform-origin: top center;
-        width: 275px;
-        height: 210px;
-    }
-
-    #formularüberschrift {
-        font-size: 9px;
-        margin-bottom: 4px;
-    }
-
-    #formularbeschreibung {
-        font-size: 9px;
-        line-height: 1.25;
-        margin-bottom: 6px;
-    }
-
-    .formulartouristbike label {
-        font-size: 9px;
-    }
-   
-    .formulartouristbike input[type="date"] {
-        font-size: 9px;
-        padding: 4px 5px;
-        width: 90px;
-    }
-
-    .formulartouristbike input[type="number"] {
-        font-size: 9px;
-        padding: 4px 5px;
-        width: 30px;
-    }
-
-    #checkbox {
-        transform: scale(0.9);
-        margin-bottom: 6px;
-    }
-
-    
-    #oder {
-        font-size: 9px;
-        margin: 4px 0;
-    }
-
-    .formulartouristbike button {
-        font-size: 9px;
-        padding: 4px 10px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        margin-left: 200px;
-        margin-top: 20px;
-
-    }
-
-    .material-symbols-outlined {
-        font-size: 13px;
-    }
-}
 @media (min-width: 768px) {
 
     .anschreiben {
-        
 
         [open] {
             overflow: visible;
@@ -729,17 +717,18 @@ span {
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
+
     .grundkenntnisse,
     .kontakt {
-    padding-bottom: 4.813rem;
-    margin: 0;
-    padding-left: 0;
-}
+        padding-bottom: 4.813rem;
+        margin: 0;
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
     .inhalt {
-       gap: clamp(3rem, 10vw, 10rem);
+        gap: 6rem;
     }
 
     #greenroutetext,
@@ -753,11 +742,13 @@ span {
         gap: 3rem;
     }
 }
+
 @media (min-width: 1600px) {
     .inhalt {
-        gap: 25rem;
+        gap: 10rem;
         max-width: 1600px;
     }
+
     .main {
         max-width: 1600px;
         margin: 0 auto;
@@ -774,11 +765,3 @@ span {
         gap: 3rem;
     }
 }
-
-
-
-
-
-
-
-

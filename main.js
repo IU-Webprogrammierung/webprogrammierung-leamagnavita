@@ -12,7 +12,7 @@ document.forms[0].addEventListener("submit", function (event) {
 
     let eingabe = document.getElementById("checkbox").checked;
     let zahl = document.getElementById("number").value;
-    
+
     //checkbox ist angeklickt = absenden möglich oder Zahlenfeld enthält Wert = absenden möglich, ansonsten Fehlermeldung
     if (eingabe || zahl !== '') {
 
@@ -47,7 +47,6 @@ neuButton.addEventListener("click", function () {
     let buchungElement = document.querySelector(".buchungsbestätigung");
     buchungElement.classList.remove("sichtbar");
 
-    let neuButton = document.getElementById("neu");
     neuButton.classList.remove("sichtbar");
     document.forms[0].reset();});
 

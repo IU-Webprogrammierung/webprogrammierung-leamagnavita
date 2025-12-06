@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Navigation und Header */
 .header {
   background-color: #FB96BD;
   padding: 1.25rem;
@@ -40,7 +41,7 @@ nav ul li {
 nav ul li a {
   display: block;
   color: #500711;
-  font-family: "inter", sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   padding: 0.75rem 1rem;
@@ -63,21 +64,240 @@ nav ul li a.active1 {
   line-height: 1;
 }
 
-.greenrouteheader {
+/* allgemein */
+h3 {
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #500711;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #500711;
+}
+
+/* Anschreiben */
+.anschreiben {
+  background-color: #ffc95f;
+  padding: 3.125rem 6.25rem;
+}
+.anschreiben .hi-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.anschreiben .hi-wrapper .hi {
+  position: relative;
+  z-index: 3;
+  top: -3%;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #500711;
+  margin-bottom: 0;
+}
+.anschreiben .hi-wrapper #scribblehi {
+  position: absolute;
+  z-index: 1;
+  top: -65%;
+  left: -90%;
+  width: 300%;
+}
+.anschreiben #text #ausklappen {
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #500711;
+  font-size: 0.875rem;
+}
+.anschreiben #text #anschreiben1 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Lebenslauf-Bereich */
+.inhalt {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  padding-top: 3rem;
+}
+.inhalt .lebenslauf {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-direction: row;
+}
+.inhalt .lebenslauf #lebenslaufstrahl {
+  height: 43rem;
+  display: block;
+  margin: 3.5rem auto;
+  margin-left: 0;
+  transform: translateX(-10px);
+  width: 4rem;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.inhalt .lebenslauf .lebenslaufcontent article {
+  margin-bottom: 2rem;
+}
+.inhalt .lebenslauf .lebenslaufcontent .überschriftlebenslauf {
+  color: #500711;
+}
+.inhalt .lebenslauf .lebenslaufcontent .studium2,
+.inhalt .lebenslauf .lebenslaufcontent .studium1,
+.inhalt .lebenslauf .lebenslaufcontent .amazon,
+.inhalt .lebenslauf .lebenslaufcontent .fachabitur,
+.inhalt .lebenslauf .lebenslaufcontent .hundekindergarten,
+.inhalt .lebenslauf .lebenslaufcontent .mömax {
+  margin-bottom: 2.188rem;
+}
+.inhalt .lebenslauf .lebenslaufcontent .studium2 h3,
+.inhalt .lebenslauf .lebenslaufcontent .studium2 p,
+.inhalt .lebenslauf .lebenslaufcontent .studium1 h3,
+.inhalt .lebenslauf .lebenslaufcontent .studium1 p,
+.inhalt .lebenslauf .lebenslaufcontent .amazon h3,
+.inhalt .lebenslauf .lebenslaufcontent .amazon p,
+.inhalt .lebenslauf .lebenslaufcontent .fachabitur h3,
+.inhalt .lebenslauf .lebenslaufcontent .fachabitur p,
+.inhalt .lebenslauf .lebenslaufcontent .hundekindergarten h3,
+.inhalt .lebenslauf .lebenslaufcontent .hundekindergarten p,
+.inhalt .lebenslauf .lebenslaufcontent .mömax h3,
+.inhalt .lebenslauf .lebenslaufcontent .mömax p {
+  margin: 0 auto;
+  margin-bottom: 0.188rem;
+}
+.inhalt .lebenslauf .lebenslaufcontent .studium2 .amazon {
+  margin-top: 2.188rem;
+}
+.inhalt .lebenslauf .lebenslaufcontent span {
+  display: block;
+}
+
+.skills .softwareskills {
+  margin-bottom: 0;
+}
+.skills .softwarelogos {
+  position: relative;
+}
+.skills .softwarelogos #figmalogo {
+  position: absolute;
+  z-index: 3;
+  left: -0.7rem;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.skills .softwarelogos #indesignlogo {
+  position: absolute;
+  z-index: 2;
+  left: 1.9rem;
+  top: 1.9rem;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.skills .softwarelogos #illustratorlogo {
+  position: absolute;
+  z-index: 1;
+  top: -0.1rem;
+  left: 6rem;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.skills .grundkenntnisse,
+.skills .kontakt {
+  padding-bottom: 4.813rem;
+  margin: 0;
+  padding-left: 5rem;
+}
+.skills .meinefähigkeiten {
+  padding-bottom: 4.813rem;
+  margin: 0;
+}
+.skills .grundkenntnisse {
+  padding-top: 9rem;
+}
+.skills .skillsliste1,
+.skills .skillsliste2 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.625rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0.625rem;
+}
+.skills .kreativ,
+.skills .empathisch,
+.skills .selbstständig,
+.skills .teamfähig,
+.skills .lernbereit {
+  background-color: #ED9BBD;
+  border-radius: 50px;
+  padding: 0.438rem;
+  width: 5.938rem;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+}
+.skills .kreativ {
+  width: 3.75rem;
+}
+.skills .kontaktliste {
+  display: flex;
+  flex-direction: column;
+}
+.skills .kontaktliste .email,
+.skills .handy,
+.skills .wohnort {
+  display: flex;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+}
+.skills .kontaktliste .email li,
+.skills .handy li,
+.skills .wohnort li {
+  margin-right: 0.625rem;
+}
+.skills #maillink,
+.skills #handynummer {
+  color: #500711;
+  text-decoration: underline;
+  white-space: nowrap;
+  padding: 10px;
+}
+.skills #wohnort {
+  padding-left: 10px;
+}
+.skills .material-symbols-outlined {
+  color: #500711;
+}
+.skills .überschriftlebenslauf {
+  color: #500711;
+}
+
+/* Projekt Greenroute */
+.greenroutebereich {
   background-color: #4E663B;
   padding: 1.25rem;
   padding-bottom: 0;
 }
-
-#projekt01 {
+.greenroutebereich #projekt01 {
   color: #F5F5F5;
   font-size: 1rem;
   text-align: center;
   position: relative;
   top: 3.125rem;
 }
-
-.greenroute {
+.greenroutebereich .greenroute {
   color: #FB96BD;
   font-size: 7.5rem;
   text-align: center;
@@ -89,11 +309,18 @@ nav ul li a.active1 {
   margin: 0 auto;
   padding: 3.125rem;
   background-color: #B1B37E;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .greenrouteframes p {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   color: #4E663B;
+}
+.greenrouteframes #protolink {
+  color: #3E5530;
 }
 
 .mockupsgreenroute {
@@ -107,240 +334,24 @@ nav ul li a.active1 {
   border-radius: 10px;
 }
 
-h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
-  color: #500711;
-}
-
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #500711;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
-  font-weight: normal;
-  color: #500711;
-}
-
-.anschreiben,
-#anschreiben1 {
+/* Projekt TouristBike */
+.touristbikesection {
+  margin: 0 auto;
   position: relative;
-  z-index: 2;
-}
-
-#ausklappen {
-  padding-top: 1rem;
-  font-family: "Poppins", sans-serif;
-  color: #500711;
-  font-size: 0.875rem;
-}
-
-.hi {
-  position: relative;
-  z-index: 3;
-  top: -3%;
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  font-weight: normal;
-  color: #500711;
-  margin-bottom: 0;
-}
-
-#scribblehi {
-  position: absolute;
   z-index: 1;
-  top: -65%;
-  left: -90%;
-  width: 300%;
+  background-color: #FFEFB3;
 }
-
-.hi-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.beschreibung {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
-  font-weight: normal;
-  color: #594d4e;
-}
-
-.anschreiben {
-  background-color: #ffc95f;
-  padding: 3.125rem 6.25rem;
-}
-
-.inhalt {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 6.25rem;
-  max-width: 68.75rem;
-  margin: 0 auto;
-  padding: 0 5.938rem;
-  padding-top: 3rem;
-}
-
-#lebenslaufstrahl {
-  height: 43rem;
-  margin-top: 3.5rem;
-  display: block;
-  margin: 3.5rem auto 0 -85px;
-  width: 4rem;
-  height: auto;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.lebenslauf {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  flex-direction: row;
-  white-space: nowrap;
-}
-.lebenslauf article {
-  margin-bottom: 2rem;
-}
-
-.studium2,
-.studium1,
-.amazon,
-.fachabitur,
-.hundekindergarten,
-.mömax {
-  margin-bottom: 2.188rem;
-}
-.studium2 h3,
-.studium2 p,
-.studium1 h3,
-.studium1 p,
-.amazon h3,
-.amazon p,
-.fachabitur h3,
-.fachabitur p,
-.hundekindergarten h3,
-.hundekindergarten p,
-.mömax h3,
-.mömax p {
-  margin: 0 auto;
-  margin-bottom: 0.188rem;
-}
-
-.studium2 .amazon {
-  margin-top: 2.188rem;
-}
-
-.grundkenntnisse,
-.kontakt {
-  padding-bottom: 4.813rem;
-  margin: 0;
-  padding-left: 5rem;
-}
-
-.meinefähigkeiten {
-  padding-bottom: 4.813rem;
-  margin: 0;
-}
-
-.grundkenntnisse {
-  padding-top: 9rem;
-}
-
-.softwareskills {
-  margin-bottom: 0;
-}
-
-.skillsliste1,
-.skillsliste2 {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 0.625rem;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 0.625rem;
-}
-
-.kreativ,
-.empathisch,
-.selbstständig {
-  background-color: #ED9BBD;
-  border-radius: 50px;
-  padding: 0.438rem;
-  width: 5.938rem;
-  text-align: center;
-}
-
-.kreativ {
-  width: 3.75rem;
-}
-
-.teamfähig,
-.lernbereit {
-  border: 0.125rem solid #FFC95F;
-  border-radius: 50px;
-  width: 5.938rem;
-  text-align: center;
-  padding-top: 0.313rem;
-}
-
-.kontaktliste {
-  display: flex;
-  flex-direction: column;
-}
-
-.kontaktliste .email,
-.handy,
-.wohnort {
-  display: flex;
-  align-items: center;
-}
-.kontaktliste .email li,
-.handy li,
-.wohnort li {
-  margin-right: 0.625rem;
-}
-
-#maillink,
-#handynummer {
-  color: #500711;
-  text-decoration: none;
-  white-space: nowrap;
-  padding: 10px;
-}
-#maillink:hover,
-#handynummer:hover {
-  text-decoration: underline;
-  text-decoration-color: #500711;
-}
-
-#wohnort {
-  padding-left: 10px;
-}
-
-.material-symbols-outlined {
-  color: #500711;
-}
-
-.touristbikeheader {
+.touristbikesection .touristbikebereich {
   background-color: #FCDC6B;
 }
-.touristbikeheader #touristbikeheading {
+.touristbikesection .touristbikebereich #touristbikeheading {
   font-family: "Inter", sans-serif;
   font-size: 7rem;
   text-align: center;
   margin-bottom: 0;
+  color: #474341;
 }
-.touristbikeheader #projekt02 {
+.touristbikesection .touristbikebereich #projekt02 {
   text-align: center;
   padding-top: 1.25rem;
   margin-top: 0;
@@ -348,98 +359,204 @@ p {
   font-size: 1rem;
   font-weight: 600;
 }
-
-#touristbikeheading,
-#projekt02,
-#touristbiketext {
-  color: #474341;
-}
-
-.touristbikeinhalt #touristbiketext {
+.touristbikesection .touristbikeinhalt #touristbiketext {
   margin: 0 auto;
   padding: 3.125rem;
   font-family: "Inter", sans-serif;
   line-height: 1.5;
+  color: #474341;
 }
-
-.touristbikeinhalt,
-.touristbikemockups {
-  background-color: #FFEFB3;
-}
-
-.touristbikemockups {
+.touristbikesection .touristbikemockups {
   position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  max-width: 720px;
+  transform-origin: top center;
 }
-.touristbikemockups #mockup,
-.touristbikemockups #csscodesnippet,
-.touristbikemockups #phpcodesnippet {
-  max-width: 100%;
+.touristbikesection .touristbikemockups #mockup {
+  width: 100%;
+  max-width: 720px;
   height: auto;
   display: block;
 }
-.touristbikemockups #mockup {
-  max-width: 90%;
-  height: auto;
-}
-.touristbikemockups #csscodesnippet {
-  position: absolute;
-  z-index: 2;
-  top: auto;
-  bottom: 0;
-  right: 45%;
-  width: 15rem;
-  border-radius: 6rem;
-}
-.touristbikemockups #phpcodesnippet {
-  position: absolute;
-  z-index: 1;
-  top: 34%;
-  left: 59.5%;
-  bottom: 0;
-  width: 29rem;
-  border-radius: 6rem;
-}
-
-.softwarelogos {
+.touristbikesection .touristbikemockups .position {
   position: relative;
+  width: fit-content;
+  margin: 0 auto;
 }
-.softwarelogos #figmalogo {
+.touristbikesection .touristbikemockups .position .formulartouristbike {
   position: absolute;
-  z-index: 3;
-  left: -0.7rem;
-  width: 4.5rem;
-  height: 4.5rem;
+  top: 54%;
+  right: 6%;
+  z-index: 10;
+  background-color: #FFFDED;
+  border: 3px solid #FCDC6B;
+  border-radius: 10px;
+  width: 257px;
+  height: 193px;
+  padding: 10px;
 }
-.softwarelogos #indesignlogo {
-  position: absolute;
-  z-index: 2;
-  left: 1.9rem;
-  top: 1.9rem;
-  width: 4.5rem;
-  height: 4.5rem;
+.touristbikesection .touristbikemockups .position .formulartouristbike #formularüberschrift {
+  color: #61432A;
+  font-family: "inter", sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+  margin-top: 0;
 }
-.softwarelogos #illustratorlogo {
-  position: absolute;
-  z-index: 1;
-  top: -0.1rem;
-  left: 6rem;
-  width: 4.5rem;
-  height: 4.5rem;
+.touristbikesection .touristbikemockups .position .formulartouristbike #formularbeschreibung {
+  font-size: 8px;
+  color: #61432A;
+  font-family: "inter", sans-serif;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike label {
+  font-size: 8px;
+  color: #61432A;
+  font-family: "inter", sans-serif;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike #date {
+  appearance: none;
+  background-color: #FCDC6B;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 7px;
+  font-family: "inter", sans-serif;
+  font-size: 8px;
+  color: #61432A;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike #checkbox {
+  background-color: #FFFDED;
+  color: #61432A;
+  display: inline-block;
+  margin-bottom: 7px;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike #checkbox:checked ~ .hide {
+  display: none;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike hr {
+  height: 1px;
+  background-color: #606C38;
+  border: none;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike #oder {
+  margin-bottom: 0;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike button {
+  margin-left: 175px;
+  background-color: #3E5530;
+  border: none;
+  color: #FFFDED;
+  padding: 4px 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 8px;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike button .material-symbols-outlined {
+  width: 8px;
+  height: 15px;
+  font-size: 15px;
+  color: #FFFDED;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike {
+  /*Buchungsbestätigung mit JS*/
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike .versteckt {
+  display: none;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike .buchungsbestätigung {
+  display: none;
+  margin-top: -1rem;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike .buchungsbestätigung.sichtbar {
+  display: block;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike #buchungicon {
+  width: 80px;
+  height: 130px;
+  margin: 0;
+  margin-left: 5rem;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike #neu {
+  display: none;
+  margin: 0;
+  margin-left: 8rem;
+  width: 8rem;
+  height: 1.5rem;
+}
+.touristbikesection .touristbikemockups .position .formulartouristbike #neu.sichtbar {
+  display: block;
 }
 
-.greenrouteframes,
-.touristbikeinhalt {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+/* Media Queries */
+@media (max-width: 480px) {
+  .touristbikemockups {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  #mockup {
+    height: auto;
+  }
+  .formulartouristbike {
+    position: absolute;
+    z-index: 10;
+    top: 54%;
+    left: 74%;
+    transform: translateX(-50%) scale(0.48);
+    transform-origin: top center;
+    width: 275px;
+    height: 210px;
+  }
+  #formularüberschrift {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
+  #formularbeschreibung {
+    font-size: 9px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+  .formulartouristbike label {
+    font-size: 9px;
+  }
+  .formulartouristbike input[type=date] {
+    font-size: 9px;
+    padding: 4px 5px;
+    width: 90px;
+  }
+  .formulartouristbike input[type=number] {
+    font-size: 9px;
+    padding: 4px 5px;
+    width: 30px;
+  }
+  #checkbox {
+    transform: scale(0.9);
+    margin-bottom: 6px;
+  }
+  #oder {
+    font-size: 9px;
+    margin: 4px 0;
+  }
+  .formulartouristbike button {
+    font-size: 9px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+  .material-symbols-outlined {
+    font-size: 13px;
+  }
 }
-
 @media (max-width: 768px) {
   .inhalt {
     flex-direction: column;
@@ -449,39 +566,35 @@ p {
     padding-left: 0;
   }
   .skills {
-    margin-top: -35%;
+    margin-top: -10%;
+    margin-left: 30px;
   }
   #portfolioheading,
   .greenroute,
-  .touristbikeheader #touristbikeheading {
+  .touristbikebereich #touristbikeheading {
     font-size: 70px;
   }
-  .touristbikemockups {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    overflow: hidden;
+  .position {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
   }
-  .touristbikemockups #mockup,
-  .touristbikemockups #csscodesnippet,
-  .touristbikemockups #phpcodesnippet {
-    position: static;
-    width: 100%;
-    max-width: 500px;
+  .formulartouristbike {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 250px;
     height: auto;
-    margin: 0.5rem 0;
-    border-radius: 1rem;
+    padding: 8px;
   }
-  .touristbikemockups #csscodesnippet,
-  .touristbikemockups #phpcodesnippet {
-    max-width: 350px;
-  }
-  .touristbikemockups #mockup {
-    max-width: 400px;
+  .touristbikemockups {
+    width: 650px;
   }
   .touristbikeinhalt {
     text-align: left;
-    padding-left: 1.3rem;
+    padding-left: 0;
   }
   .touristbikeinhalt #touristbiketext {
     margin: 0;
@@ -497,9 +610,6 @@ p {
   }
 }
 @media (min-width: 768px) {
-  .anschreiben {
-    pointer-events: none;
-  }
   .anschreiben [open] {
     overflow: visible;
   }
@@ -510,9 +620,17 @@ p {
     display: block;
   }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .grundkenntnisse,
+  .kontakt {
+    padding-bottom: 4.813rem;
+    margin: 0;
+    padding-left: 0;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1599px) {
   .inhalt {
-    gap: 25rem;
+    gap: 6rem;
   }
   #greenroutetext,
   #touristbiketext {
@@ -526,7 +644,7 @@ p {
 }
 @media (min-width: 1600px) {
   .inhalt {
-    gap: 25rem;
+    gap: 10rem;
     max-width: 1600px;
   }
   .main {
@@ -535,49 +653,12 @@ p {
   }
   #greenroutetext,
   #touristbiketext {
-    width: 89%;
+    width: 60%;
     text-align: left;
     margin: 0 auto;
   }
   .mockupsgreenroute {
     gap: 3rem;
-  }
-  .touristbikemockups {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .touristbikemockups #mockup,
-  .touristbikemockups #csscodesnippet,
-  .touristbikemockups #phpcodesnippet {
-    max-width: 120%;
-    height: auto;
-    display: block;
-  }
-  .touristbikemockups #mockup {
-    max-width: 90%;
-    height: auto;
-  }
-  .touristbikemockups #csscodesnippet {
-    position: absolute;
-    z-index: 2;
-    top: auto;
-    bottom: 0;
-    right: 75%;
-    width: 20rem;
-    border-radius: 6rem;
-  }
-  .touristbikemockups #phpcodesnippet {
-    position: absolute;
-    z-index: 1;
-    top: 34%;
-    left: 60%;
-    bottom: 0;
-    width: 40rem;
-    border-radius: 6rem;
   }
 }
 

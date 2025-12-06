@@ -15,11 +15,11 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
+    
 </head>
 
 <body>
-    <section class="greenrouteheader">
+    <section class="greenroutebereich">
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-link">über mich</a></li>
@@ -27,7 +27,7 @@
             </ul>
         </nav>
                 <p id="projekt01">01</p>
-                <h2 class="greenroute">Greenroute</h2>
+                <h1 class="greenroute">Greenroute</h1>
 
     </section>
     <main>
@@ -44,20 +44,31 @@
                     städtischer Grünflächen zu begeistern.
                     Bei der Entwicklung der App habe ich besonderen Wert auf ein nutzerfreundliches Interaktionsdesign
                     gelegt und innovative Technologien wie Augmented Reality in den Alltag integriert. Dieses Projekt
-                    zeigt meine Fähigkeit, Design, Funktionalität und Nachhaltigkeit zu vereinen.</p>
+                    zeigt meine Fähigkeit, Design, Funktionalität und Nachhaltigkeit zu vereinen.  
+                        <a href="https://www.figma.com/proto/CrvAUQ5psmcMo4xVI86leQ/Wireframes-Urban-Gardening?node-id=44-853&p=f&t=wikbATC7aczr63cE-1&scaling=scale-down&content-scaling=fixed&page-id=44%3A801"
+                        target="_blank" rel="noopener" id="protolink"> Prototyp öffnen
+                        </a>
+                    </p>
+                   
             </article>
             <article class="mockupsgreenroute">
                 <img src="images/frame-gutschein-einloesen.png" alt="Greenroute Screen: Gutscheine einlösen" width="200"
                     height="450">
                 <img src="images/Frame Baum pflanzen.png" alt="Greenroute Screen: Baum pflanzen" width="200"
                     height="450">
+
+            <article class="greenrouteproto">
                 <img src="images/Frame Home.png" alt="Greenroute Screen: Home" width="200" height="450">
+            </article>
+                
                 <img src="images/Frame popup.png" alt="Greenroute Screen: Pop up" width="200" height="450">
                 <img src="images/FrameStadtbaum.png" alt="Greenroute Screen: Stadtbaum" width="200" height="450">
             </article>
+         
         </section> 
-    <section>
-        <article class="touristbikeheader">
+            
+    <section class="touristbikesection">
+        <article class="touristbikebereich">
             <p id="projekt02">02</p>
             <h2 id="touristbikeheading">TouristBike</h2>
         </article>
@@ -67,14 +78,43 @@
                 Umsetzung mithilfe von HTML, CSS und PHP in einer lokalen XAMPP-Umgebung.</p>
         </article>
         <article class="touristbikemockups">
-            <img id="mockup" src="images/Frame 6.png" alt="TouristBike Startscreen" width="720"
-                height="720">
-            <img id="csscodesnippet"  src="images/csscodesnippet.png" alt="button css code snippet">
-            <img id="phpcodesnippet" src="images/phpcodesnippet.png" alt=" Formularübertragung php code snippet">
+            <article class="position">
+                <img id="mockup" src="images/Frame 6.png" alt="TouristBike Startscreen">
+                <form class="formulartouristbike">
+                    <article class="formularinhalt">
+                        <p id="formularüberschrift">eBike Bedarf übermitteln</p>
+                        <p id="formularbeschreibung">hier kannst du den vorraussichtlichen Bedarf der E-Bikes für eine kommende
+                            Woche angeben, damit diese rechtzeitig geliefert werden können.</p>
+                        <hr>
+                        <label for="date">Lieferung für die Woche ab dem</label>
+                        <input type="date" id="date" required />
+        
+                        <label for="checkbox">erwartete Auslastung übernehmen</label>
+                        <input type="checkbox" id="checkbox" />
+        
+                        <article class="hide">
+                            <p id="oder">ODER</p>
+                            <label for="number">manuelle Eingabe</label>
+                            <input type="number" min="5" max="25" step="1" id="number">
+                        </article>
+        
+                        <button type="submit">absenden<span class="material-symbols-outlined">send</span></button>
+                    </article>
+                    <article class="buchungsbestätigung">
+                        <p id="buchung">Vielen Dank für Deine Buchung!</p>
+                        <img id="buchungicon" src="images/buchungsbestätigungicon.png"
+                            alt="Gelber offener Briefumschlag mit einem Bestätigungshaken auf dem Briefpapier">
+                        <button type="button" id="neu">Formular wieder anzeigen</button>
+                    </article>
+        
+                </form>
+            </article>
         </article>
         
-    </section>
-    </main>
-</body>
-
-</html>
+        
+        </section>
+        </main>
+        <script src="main.js"></script>
+        </body>
+        
+        </html>

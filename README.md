@@ -19,7 +19,7 @@
 * es wurden semantische HTML-Elemente genutzt, um eine verständliche Struktur zu schaffen und die Grundlage für Barrierefreiheit zu legen
 * durch SCSS-Nesting ist der Code strukturiert für jede Komponente des Portfolios dargestellt
 
-## 3. JavaScript Features
+## 3. JavaScript Features für Interaktion
 
 **Einklappbarer Text auf der Startseite**
 * Text automatisch geschlossen unterhalb von 768px Bildschirmbreite
@@ -46,7 +46,29 @@
 * durch viele Komponenten bestand das Risiko, das falsches Verschachteln im Refactoring das Layout zerstört
 * das SCSS wurde dann anhand des HTML logisch gruppiert und Doppelungen entfernt, außerdem wurden die zusammengehörigen Komponenten auch verschachtelt
 
-## 5. mögliche Erweiterungen
+## 5. weitere Details und Errungenschaften
+**Breakpoints und Responsive Design**
+* Einsatz mehrerer Breakpoints (480px, 600px, 768px, 1000px, 1200px, 1600px)
+* Skalierung des TouristBike-Formulars je nach Bildschirmbreite
+* Anpassung des Layouts und Projekt-Darstellungen
+
+**Eingesetzte HTML- und CSS-Features**
+* Flexbox und Block für Layoutstruktur
+* absolute und relative Positionierungen
+* Transformationslogik
+* semantische HTML-Struktur
+* Nutzung von Google Fonts und Material Symbols
+
+**Refactoring**
+* entfernen doppelter oder nicht mehr benötigter SCSS-Regeln
+* weiterer Ausbau des Nestings anhand der HTML-Struktur, dadurch mehr Übersichtlichkeit
+
+**Git-Workflow**
+* regelmäßige Commits während der Entwicklung
+* finaler Git-Tag
+* Nutzung von Git bei Fehlern
+
+## 6. mögliche Erweiterungen
 * Erweiterung des Portfolios durch zusätzliche Projekte
 * kleine Animationen, z.B. bei Buttons oder dem Formular-Feedback
 

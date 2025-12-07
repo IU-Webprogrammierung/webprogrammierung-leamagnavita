@@ -556,86 +556,8 @@ p {
 }
 
 /* Media Queries */
-@media (max-width: 480px) {
 
-    .touristbikemockups {
-        position: relative;
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-
-    #mockup {
-        height: auto;
-    }
-
-    .formulartouristbike {
-        position: absolute;
-        z-index: 10;
-        top: 54%;
-        left: 74%;
-        transform: translateX(-50%) scale(0.48);
-        transform-origin: top center;
-        width: 275px;
-        height: 210px;
-    }
-
-    #formularüberschrift {
-        font-size: 9px;
-        margin-bottom: 4px;
-    }
-
-    #formularbeschreibung {
-        font-size: 9px;
-        line-height: 1.25;
-        margin-bottom: 6px;
-    }
-
-    .formulartouristbike label {
-        font-size: 9px;
-    }
-
-    .formulartouristbike input[type="date"] {
-        font-size: 9px;
-        padding: 4px 5px;
-        width: 90px;
-    }
-
-    .formulartouristbike input[type="number"] {
-        font-size: 9px;
-        padding: 4px 5px;
-        width: 30px;
-    }
-
-    #checkbox {
-        transform: scale(0.9);
-        margin-bottom: 6px;
-    }
-
-
-    #oder {
-        font-size: 9px;
-        margin: 4px 0;
-    }
-
-    .formulartouristbike button {
-        font-size: 9px;
-        padding: 4px 10px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        margin-left: 200px;
-        margin-top: 20px;
-
-    }
-
-    .material-symbols-outlined {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .inhalt {
         flex-direction: column;
     }
@@ -653,30 +575,17 @@ p {
     #portfolioheading,
     .greenroute,
     .touristbikebereich #touristbikeheading {
-        font-size: 70px;
+        font-size: 70px !important;
     }
 
-    .position {
-        position: relative;
-        width: fit-content;
-        margin: 0 auto;
-    }
-
-    .formulartouristbike {
+    .touristbikesection .touristbikemockups .position .formulartouristbike {
         position: absolute;
-        top: 70%;
-        left: 75%;
+        top: 69%; 
+        left: 74.5%;
         transform: translate(-50%, -50%);
-        z-index: 10;
-        width: 250px;
-        height: auto;
-        padding: 8px;
+        transform-origin: top center;
     }
-
-    .touristbikemockups {
-        width: 650px;
-    }
-
+    
     .touristbikeinhalt {
         text-align: left;
         padding-left: 0;
@@ -701,6 +610,7 @@ p {
 @media (min-width: 768px) {
 
     .anschreiben {
+        
 
         [open] {
             overflow: visible;
@@ -724,10 +634,12 @@ p {
         margin: 0;
         padding-left: 0;
     }
+    
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
     .inhalt {
+       gap: clamp(3rem, 10vw, 10rem);
         gap: 6rem;
     }
 
@@ -744,7 +656,9 @@ p {
 }
 
 @media (min-width: 1600px) {
+
     .inhalt {
+        gap: 25rem;
         gap: 10rem;
         max-width: 1600px;
     }
@@ -763,5 +677,93 @@ p {
 
     .mockupsgreenroute {
         gap: 3rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+
+    .touristbikesection .touristbikemockups .position .formulartouristbike {
+        position: absolute;
+        top: 72%; 
+        left: 75%;
+        transform: translate(-50%, -50%) scale(0.90);
+        transform-origin: top center;
+
+    }
+
+}
+@media (min-width: 600px) and (max-width: 767px) {
+
+    .touristbikesection .touristbikemockups .position .formulartouristbike {
+        position: absolute;
+        top: 69%; 
+        left: 74.5%;
+        transform: translate(-50%, -50%);
+        transform-origin: top center;
+
+    }
+
+}
+@media (max-width: 480px) {
+
+    .touristbikesection .touristbikemockups .position .formulartouristbike {
+        position: absolute;
+        top: 78%; 
+        left: 75%;
+        transform: translate(-50%, -50%) scale(0.65);
+        transform-origin: top center;
+    }
+
+    #formularüberschrift {
+        font-size: 9px;
+        margin-bottom: 4px;
+    }
+
+    #formularbeschreibung {
+        font-size: 9px;
+        line-height: 1.25;
+        margin-bottom: 6px;
+    }
+
+    .formulartouristbike label {
+        font-size: 9px;
+    }
+   
+
+    .formulartouristbike input[type="date"] {
+        font-size: 9px;
+        padding: 4px 5px;
+        width: 90px;
+    }
+
+    .formulartouristbike input[type="number"] {
+        font-size: 9px;
+        padding: 4px 5px;
+        width: 30px;
+    }
+
+    #checkbox {
+        transform: scale(0.9);
+        margin-bottom: 6px;
+    }
+
+    #oder {
+        font-size: 9px;
+        margin: 4px 0;
+    }
+
+    .formulartouristbike button {
+        font-size: 9px;
+        padding: 4px 10px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-left: 200px;
+        margin-top: 20px;
+
+    }
+
+    .material-symbols-outlined {
+        font-size: 13px;
     }
 }
